@@ -1,0 +1,329 @@
+@import url("https://fonts.cdnfonts.com/css/verdana");
+@media (prefers-color-scheme: dark) {
+html {
+  --u: 2.5vmin;
+  --c1: hsl(0deg 0% 0%);
+  --c2: hsl(212deg 4% 9%);
+  --c3: hsl(212deg 7% 36%);
+  --gp: 50% / calc(var(--u) * 5) calc(var(--u) * 10);
+  --bp: calc(var(--u) * -2.5) calc(var(--u) * -5);
+  height: 100vh;
+  --bg: radial-gradient(circle at 50% 25%, var(--c2) 23%, #fff0 25% 100%)
+      var(--gp),
+    conic-gradient(from 270deg at 34% 46%, var(--c2) 0 12.5%, #fff0 0 100%)
+      var(--gp),
+    conic-gradient(from 45deg at 66% 46%, var(--c2) 0 12.5%, #fff0 0 100%)
+      var(--gp),
+    conic-gradient(from 180deg at 50% 80%, var(--c2) 0 12.5%, #fff0 0 100%)
+      var(--gp),
+    conic-gradient(from 135deg at 50% 80%, var(--c2) 0 12.5%, #fff0 0 100%)
+      var(--gp),
+    conic-gradient(from 0deg at 0% 20%, var(--c2) 0 12.5%, #fff0 0 100%)
+      var(--gp),
+    conic-gradient(from -45deg at 100% 20%, var(--c2) 0 12.5%, #fff0 0 100%)
+      var(--gp),
+    linear-gradient(
+        180deg,
+        var(--c2) 0 4.5%,
+        #fff0 0 45.25%,
+        var(--c2) 0 50%,
+        #fff0 0% 100%
+      )
+      var(--gp),
+    radial-gradient(
+        circle at 50% 25%,
+        #fff0 0 25%,
+        var(--c2) 26% 32%,
+        #fff0 0 100%
+      )
+      var(--gp),
+    linear-gradient(165deg, var(--c3) -15%, var(--c1) 44%, #fff0 0 100%)
+      var(--gp),
+    linear-gradient(180deg, var(--c1) 50%, #fff0 0 100%) var(--gp);
+  background: var(--bg), var(--bg);
+  background-position: var(--bp), var(--bp), var(--bp), var(--bp), var(--bp),
+    var(--bp), var(--bp), var(--bp), var(--bp), var(--bp), var(--bp), 0 0, 0 0,
+    0 0, 0 0, 0 0, 0 0, 0 0, 0 0, 0 0, 0 0, 0 0;
+  background-color: var(--c2);
+}
+
+body {
+  font-family: "Verdana", sans-serif;
+  margin-left: 20px;
+  color: rgb(226, 233, 241);
+}
+
+h1 {
+  color: rgb(239, 240, 241);
+}
+
+h2 {
+  color: rgb(239, 240, 241);
+}
+
+a {
+  color: #3e99e8;
+}
+
+p {
+  line-height: 24px;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: rgb(226, 233, 241);
+}
+
+table,
+th,
+td {
+  width: 1800px;
+  height: 100px;
+  border: 0.01mm solid;
+  margin: auto;
+}
+
+td,
+th {
+  text-align: center;
+  font-size: 50px;
+}
+
+.static {
+  position: absolute;
+  background: white;
+}
+
+.static:hover {
+  opacity: 0;
+}
+
+div .cool-button {
+  border-radius: 0px;
+}
+
+nav.primary-navigation {
+  margin: 0 auto;
+  display: block;
+  padding: 20px 0 0 0;
+  text-align: center;
+  font-size: 16px;
+}
+nav.primary-navigation ul li {
+  list-style: none;
+  margin: 0 auto;
+  border-left: 2px solid #3ca0e7;
+  display: inline-block;
+  padding: 0 30px;
+  position: relative;
+  text-decoration: none;
+  text-align: center;
+}
+nav.primary-navigation li a {
+  color: white;
+}
+nav.primary-navigation li a:hover {
+  color: #3ca0e7;
+}
+nav.primary-navigation li:hover {
+  cursor: pointer;
+}
+nav.primary-navigation ul li ul {
+  visibility: hidden;
+  opacity: 0;
+  position: absolute;
+  padding-left: 0;
+  left: 0;
+  display: none;
+  background: rgba(22, 20, 21, 0.9);
+}
+nav.primary-navigation ul li:hover > ul,
+nav.primary-navigation ul li ul:hover {
+  visibility: visible;
+  opacity: 1;
+  display: block;
+  min-width: 250px;
+  text-align: left;
+  padding-top: 20px;
+  box-shadow: 0px 3px 5px -1px #3e3f3e;
+}
+nav.primary-navigation ul li ul li {
+  clear: both;
+  width: 100%;
+  text-align: left;
+  margin-bottom: 20px;
+  border-style: none;
+}
+nav.primary-navigation ul li ul li a:hover {
+  padding-left: 10px;
+  border-left: 2px solid #3ca0e7;
+  transition: all 0.3s ease;
+}
+
+a {
+  text-decoration: none;
+}
+a:hover {
+  color: #3ca0e7;
+}
+
+ul li ul li a {
+  transition: all 0.5s ease;
+}
+
+}
+
+@media (prefers-color-scheme: light) {
+  body {
+    font-family: "Verdana", sans-serif;
+    margin-left: 20px;
+    color: rgb(0, 0, 0);
+  }
+  
+  h1 {
+    color: rgb(0, 0, 0);
+  }
+  
+  h2 {
+    color: rgb(0, 0, 0);
+  }
+  
+  a {
+    color: #3e99e8;
+  }
+  
+  p {
+    line-height: 24px;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: rgb(0, 0, 0);
+  }
+  
+  table,
+  th,
+  td {
+    width: 1800px;
+    height: 100px;
+    border: 0.01mm solid;
+    margin: auto;
+  }
+  
+  td,
+  th {
+    text-align: center;
+    font-size: 50px;
+  }
+  
+  .static {
+    position: absolute;
+    background: white;
+  }
+  
+  .static:hover {
+    opacity: 0;
+  }
+  
+  div .cool-button {
+    border-radius: 0px;
+  }
+  
+  nav.primary-navigation {
+    margin: 0 auto;
+    display: block;
+    padding: 20px 0 0 0;
+    text-align: center;
+    font-size: 16px;
+  }
+  nav.primary-navigation ul li {
+    list-style: none;
+    margin: 0 auto;
+    border-left: 2px solid #3ca0e7;
+    display: inline-block;
+    padding: 0 30px;
+    position: relative;
+    text-decoration: none;
+    text-align: center;
+  }
+  nav.primary-navigation li a {
+    color: black;
+  }
+  nav.primary-navigation li a:hover {
+    color: #3ca0e7;
+  }
+  nav.primary-navigation li:hover {
+    cursor: pointer;
+  }
+  nav.primary-navigation ul li ul {
+    visibility: hidden;
+    opacity: 0;
+    position: absolute;
+    padding-left: 0;
+    left: 0;
+    display: none;
+    background: rgba(255, 255, 255, 0.9);
+  }
+  nav.primary-navigation ul li:hover > ul,
+  nav.primary-navigation ul li ul:hover {
+    visibility: visible;
+    opacity: 1;
+    display: block;
+    min-width: 250px;
+    text-align: left;
+    padding-top: 20px;
+    box-shadow: 0px 3px 5px -1px #3e3f3e;
+  }
+  nav.primary-navigation ul li ul li {
+    clear: both;
+    width: 100%;
+    text-align: left;
+    margin-bottom: 20px;
+    border-style: none;
+  }
+  nav.primary-navigation ul li ul li a:hover {
+    padding-left: 10px;
+    border-left: 2px solid #3ca0e7;
+    transition: all 0.3s ease;
+  }
+  
+  a {
+    text-decoration: none;
+  }
+  a:hover {
+    color: #3ca0e7;
+  }
+  
+  ul li ul li a {
+    transition: all 0.5s ease;
+  }
+  html {
+    --s: 82px; /* control the size */
+    --c1: #b2b2b2;
+    --c2: #ffffff;
+    --c3: #d9d9d9;
+    
+    --_g: var(--c3) 0 120deg,#0000 0;
+    background:
+      conic-gradient(from -60deg at 50% calc(100%/3),var(--_g)),
+      conic-gradient(from 120deg at 50% calc(200%/3),var(--_g)),
+      conic-gradient(from  60deg at calc(200%/3),var(--c3) 60deg,var(--c2) 0 120deg,#0000 0),
+      conic-gradient(from 180deg at calc(100%/3),var(--c1) 60deg,var(--_g)),
+      linear-gradient(90deg,var(--c1)   calc(100%/6),var(--c2) 0 50%,
+                            var(--c1) 0 calc(500%/6),var(--c2) 0);
+    background-size: calc(1.732*var(--s)) var(--s);
+  }
+}
+
+h1 {
+  font-size: 40px;
+}
+
+h2 {
+  font-size: 35px;
+}
+
+h3 {
+  font-size: 30px;
+}
+
+h4 {
+  font-size: 25px;
+}
+p {
+  font-size: 20px;
+} 

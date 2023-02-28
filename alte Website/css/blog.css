@@ -1,0 +1,115 @@
+* {
+    box-sizing: border-box;
+  }
+  
+  body {
+    color: #EAE6EA;
+    background-color: rgba(234, 230, 234, 0.7);
+    background-image: url("assets/background.jpg");
+    padding: 20px;
+    counter-reset: h2counter;
+  }
+  
+  .header {
+    margin-top: 30px;
+    padding: 30px;
+    font-size: 40px;
+    text-align: center;
+    background: #3e3f3e;
+    border: none;
+    border-radius: 10px;
+  }
+
+  hr {
+    margin-top: -17px;
+    height: 3px;
+    background-color: white;
+  }
+
+h2 a{
+  color: white;
+}
+
+   .pull-right {
+    float: right;
+  }
+
+h2 a:before{
+  content: "Erstellt : ";
+
+}
+div img  {
+  border-radius: 10px;
+
+}
+
+h1 {
+  counter-reset: h2counter;
+}
+
+h2:before{
+  content: counter(h2counter) ".\0000a0\0000a0";
+  counter-increment: h2counter;
+  counter-reset: h3counter;
+}
+
+h3:before{
+  content: counter(h2counter) "." counter(h3counter) ".\0000a0\0000a0";
+  counter-increment: h3counter;
+}
+
+  .leftcolumn {
+    float: left;
+    width: 75%;
+    border: none;
+    border-radius: 10px;
+  }
+  
+  .rightcolumn {
+    float: left;
+    width: 25%;
+    padding-left: 20px;
+    border: none;
+    border-radius: 10px;
+  }
+  
+  .fakeimg {
+    background-color: #aaa;
+    width: 100%;
+    padding: 20px;
+    border: none;
+    border-radius: 10px;
+  }
+  
+  .card {
+    background-color: #3e3f3e;
+    padding: 20px;
+    margin-top: 20px;
+    border: none;
+    border-radius: 10px;
+  }
+
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+    border: none;
+    border-radius: 10px;
+  }
+  
+  .footer {
+    padding: 20px;
+    text-align: center;
+    margin-top: 20px;
+    border: none;
+    border-radius: 10px;
+        background-color: #3e3f3e;
+  }
+  
+  @media screen and (max-width: 800px) {
+    .leftcolumn, .rightcolumn {
+      width: 100%;
+      padding: 0;
+    }
+  }
+  

@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="de">
+    <head>
+        <meta charset="UTF-8">
+        <title>Home</title>
+        <link href="css/style.css" rel="stylesheet">
+    </head>
+    <body>
+
+      <header>
+        <nav>
+            <ul>
+              <li><a href="index.html"><button button class="cool-button">Home</button></a></li>
+              <li><a href="Stundenplan.html"><button button class="cool-button">Stundenplan</button></a></li>
+              <li><a href="blog.html"><button button class="cool-button">Blog</button></a></li>
+              <div class="dropdown">
+                <button class="dropbtn">Dropdown</button>
+                <div class="dropdown-content">
+                  <button id="dark-mode-toggle" button class="cool-button"><img src="assets\moon.png" alt="Bild konnte nicht geladen werden" style="display: block; margin: auto;"></button> 
+                  <button onclick=window.location="axolotl.html"; id="dropdownmenu" button class="cool-button">Axolotl</button>
+                  <button onclick=window.location="steckbrief.html"; id="dropdownmenu" button class="cool-button">Impressum</button>
+                </div>
+              </div>
+            </ul>
+          </nav>
+        </header>
+      
+          <table>
+            <tr>
+              <th>Stunden / Tage</th>
+              <th>Montag</th>
+              <th>Dienstag</th>
+              <th>Mittwoch</th>
+              <th>Donnerstag</th>
+              <th>Freitag</th>
+            </tr>
+            <tr>
+              <td>1.Stunde</td>
+              <td rowspan="2">Chemie</td>
+              <td rowspan="2">Latein</td>
+              <td rowspan="2">Mathe</td>
+              <td rowspan="2">Kunst</td>
+              <td rowspan="2">Physik</td>
+            </tr>
+            <tr>
+              <td>2.Stunde</td>
+              </tr>
+              <tr>
+              <td>3.Stunde</td>
+              <td rowspan="2">Geschichte</td>
+              <td rowspan="2">Sport</td>
+              <td rowspan="2">Deutsch</td>
+              <td rowspan="2">Informatik</td>
+              <td>Biologie</td>
+              </tr>
+              <tr>
+              <td>4.Stunde</td>
+              <td>Religion</td>
+              </tr>
+              <tr>
+              <td>5.Stunde</td>
+              <td>Mathe</td>
+              <td>Deutsch</td>
+              <td>Englisch</td>
+              <td>Latein</td>
+              <td>Englisch</td>
+              </tr>
+              <tr>
+                <td>6.Stunde</td>
+                <td>Sport</td>
+                <td>Informatik</td>
+                <td>Religion</td>
+                <td>Latein</td>
+                <td>Englisch</td>
+              </tr>
+              <td>7.Stunde</td>
+              <td> </td>
+              <td> </td>
+              <td> </td>
+              <td>Biologie</td>
+              <td> </td>
+            </tr>
+            <tr>
+                <td colspan="6">Schulschluss</td>
+            </tr>
+          </table>
+    </body>
+</html>
+<script src="js/mode.js"></script>
+<script src="js/menu.js"></script>
