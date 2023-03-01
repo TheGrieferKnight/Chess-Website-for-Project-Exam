@@ -1,43 +1,121 @@
 <!DOCTYPE html>
 <html lang="de">
-  <head>
-    <meta charset="UTF-8" />
-    <link
-      rel="stylesheet"
-      href="https://fonts.googleapis.com/css?family=Arvo&amp;display=swap"
-    />
-    <link rel="stylesheet" href="css/style.css" />
-    <title>Chess: A Game of Strategy and Skill</title>
-  </head>
-  <body>
-    <header>
-      <nav role="navigation" class="primary-navigation">
-        <ul>
-          <li><a href="index.html">Home</a></li>
-          <li>
-            <a href="rules.html">Rules &dtrif;</a>
-            <ul class="dropdown">
-              <li><a href="enpassant.html">En Passant</a></li>
-              <li><a href="#">Web Design</a></li>
-              <li><a href="#">Illustration</a></li>
-              <li><a href="#">Iconography</a></li>
-            </ul>
-          </li>
-          <li><a href="#">About</a></li>
-          <li><a href="#">Contact</a></li>
-        </ul>
-      </nav>
 
-      <hr />
-      <h1>Sample Headline</h1>
-      <p>Sample Paragraph</p>
-      <p>&nbsp;</p>
-    </header>
+<head>
+  <meta charset="UTF-8" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Arvo&amp;display=swap" />
+  <link rel="stylesheet" href="css/arcade-theme.css" />
+  <link rel="stylesheet" href="css/navbar.css" />
+  <title>Chess: A Game of Strategy and Skill</title>
+</head>
 
-    <footer>
-      <p>Copyright 2023. All rights reserved.</p>
-    </footer>
-  </body>
+<body>
+
+  <nav class="menu" role='navigation'>
+    <ol>
+      <a href="index.html">
+        <li class="menu-item">Home</li>
+      </a>
+      <li onclick="window.location='rules.html'" class="menu-item" aria-haspopup="true">Rules
+        <ol class="sub-menu" class="top" aria-label="submenu">
+          <a href="castling.html">
+            <li class="menu-item">Castling</li>
+          </a>
+          <a href="enpassant.html">
+            <li class="menu-item">En Passant</li>
+          </a>
+          <a href="legalmoves.html">
+            <li class="menu-item">Legal Moves</li>
+          </a>
+        </ol>
+      </li>
+      <li class="menu-item" aria-haspopup="true">Openings
+        <ol class="sub-menu" aria-label="submenu">
+          <a href="openings.html">
+            <li class="menu-item">Overview</li>
+          </a>
+          <a href="the-kings-pawn-opening.html">
+            <li class="menu-item">Kings Pawn Opening</li>
+          </a>
+          <a href="the-queens-pawn-opening.html">
+            <li class="menu-item">The Queens Pawn Opening</li>
+          </a>
+          <a href="the-english-opening.html">
+            <li class="menu-item">The English Opening</li>
+          </a>
+        </ol>
+      </li>
+      <li onclick="window.location='endgames.html'" class="menu-item" aria-haspopup="true">Endgames
+        <ol class="sub-menu" aria-label="submenu">
+          <a href="openings.html">
+            <li class="menu-item">!WIP!</li>
+          </a>
+        </ol>
+      </li>
+      <li class="menu-item" aria-haspopup="true">Strategies
+        <ol class="sub-menu" aria-label="submenu">
+          <a href="opening-strategies.html">
+            <li class="menu-item">Opening Strategies</li>
+          </a>
+          <a href="middle-game-strategies.html">
+            <li class="menu-item">Middle Game Strategies</li>
+          </a>
+          <a href="end-game-strategies.html">
+            <li class="menu-item">Endgame Strategies</li>
+          </a>
+        </ol>
+      </li>
+      <a href="tactics.html">
+        <li class="menu-item">Tactics</li>
+      </a>
+    </ol>
+  </nav>
+
+  <div class="main">
+    <div class="head">
+      <h1 class="headline">Discover the Fascinating History of Chess</h1>
+      <h2 class="subhead">
+        From its origins in ancient India to its modern-day status as a beloved
+        international pastime, chess has a rich and storied history. Explore the
+        game's evolution and learn how it has shaped cultures around the world.
+      </h2>
+      <div class="article-meta">
+        <div class="author">
+          <svg id="author-avatar" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg" width="80"
+            height="80">
+            <title id="avatarTitle">Author Avatar</title>
+            <desc id="avatarDesc">
+              A cartoon avatar of a smiling purple square on a blue
+              background.
+            </desc>
+            <mask id="mask__beam" maskUnits="userSpaceOnUse" x="0" y="0" width="36" height="36">
+              <rect width="36" height="36" rx="72" fill="white"></rect>
+            </mask>
+            <g mask="url(#mask__beam)">
+              <rect width="36" height="36" fill="#0ebeff"></rect>
+              <path d="M13,19 a1,0.75 0 0,0 10,0" fill="white"></path>
+              <rect x="12" y="14" width="1.5" height="2" rx="1" stroke="none" fill="white"></rect>
+              <rect x="22" y="14" width="1.5" height="2" rx="1" stroke="none" fill="white"></rect>
+            </g>
+            </g>
+          </svg>
+          <div class="author__info">
+            <p class="byline">By: Fabian Steineck</p>
+            <p class="dateline">February 28, 2023</p>
+          </div>
+        </div>
+        <p class="article-tags">
+          <span class="tag">chess</span> <span class="tag">strategy games</span>
+          <span class="tag featured">chess tactics</span>
+        </p>
+      </div>
+    </div>
+    <div class="content">
+      <footer>
+        <p>Copyright 2023. All rights reserved.</p>
+      </footer>
+</body>
+
 </html>
 <script src="js/mode.js"></script>
 <script src="js/menu.js"></script>

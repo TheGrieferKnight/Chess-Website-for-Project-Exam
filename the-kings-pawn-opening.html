@@ -4,38 +4,78 @@
 <head>
   <meta charset="UTF-8" />
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Arvo&amp;display=swap" />
-  <link rel="stylesheet" href="T:Downloads/arcade-life-magazine-layout/dist/style.css" />
+  <link rel="stylesheet" href="css/arcade-theme.css" />
   <link rel="stylesheet" href="css/navbar.css" />
   <title>Chess: A Game of Strategy and Skill</title>
 </head>
 
 <body>
 
-  <div class="header"></div>
-  <input type="checkbox" class="openSidebarMenu" id="openSidebarMenu">
-  <label for="openSidebarMenu" class="sidebarIconToggle">
-    <div class="spinner diagonal part-1"></div>
-    <div class="spinner horizontal"></div>
-    <div class="spinner diagonal part-2"></div>
-  </label>
-  <div id="sidebarMenu">
-    <ul class="sidebarMenuInner">
-      <li><a href="https://vanila.io" target="_blank">Company</a></li>
-      <li><a href="https://instagram.com/plavookac" target="_blank">Instagram</a></li>
-      <li><a href="https://twitter.com/plavookac" target="_blank">Twitter</a></li>
-      <li><a href="https://www.youtube.com/channel/UCDfZM0IK6RBgud8HYGFXAJg" target="_blank">YouTube</a></li>
-      <li><a href="https://www.linkedin.com/in/plavookac/" target="_blank">Linkedin</a></li>
-    </ul>
-  </div>
-
-
-  </section>
+  <nav class="menu" role='navigation'>
+    <ol>
+      <a href="index.html">
+        <li class="menu-item">Home</li>
+      </a>
+      <li onclick="window.location='rules.html'" class="menu-item" aria-haspopup="true">Rules
+        <ol class="sub-menu" class="top" aria-label="submenu">
+          <a href="castling.html">
+            <li class="menu-item">Castling</li>
+          </a>
+          <a href="enpassant.html">
+            <li class="menu-item">En Passant</li>
+          </a>
+          <a href="legalmoves.html">
+            <li class="menu-item">Legal Moves</li>
+          </a>
+        </ol>
+      </li>
+      <li class="menu-item" aria-haspopup="true">Openings
+        <ol class="sub-menu" aria-label="submenu">
+          <a href="openings.html">
+            <li class="menu-item">Overview</li>
+          </a>
+          <a href="the-kings-pawn-opening.html">
+            <li class="menu-item">Kings Pawn Opening</li>
+          </a>
+          <a href="the-queens-pawn-opening.html">
+            <li class="menu-item">The Queens Pawn Opening</li>
+          </a>
+          <a href="the-english-opening.html">
+            <li class="menu-item">The English Opening</li>
+          </a>
+        </ol>
+      </li>
+      <li onclick="window.location='endgames.html'" class="menu-item" aria-haspopup="true">Endgames
+        <ol class="sub-menu" aria-label="submenu">
+          <a href="openings.html">
+            <li class="menu-item">!WIP!</li>
+          </a>
+        </ol>
+      </li>
+      <li class="menu-item" aria-haspopup="true">Strategies
+        <ol class="sub-menu" aria-label="submenu">
+          <a href="opening-strategies.html">
+            <li class="menu-item">Opening Strategies</li>
+          </a>
+          <a href="middle-game-strategies.html">
+            <li class="menu-item">Middle Game Strategies</li>
+          </a>
+          <a href="end-game-strategies.html">
+            <li class="menu-item">Endgame Strategies</li>
+          </a>
+        </ol>
+      </li>
+      <a href="tactics.html">
+        <li class="menu-item">Tactics</li>
+      </a>
+    </ol>
+  </nav>
 
   <div class="main">
     <div class="head">
-      <h1 class="headline">Opening Strategies</h1>
+      <h1 class="headline">!WIP!</h1>
       <h2 class="subhead">
-        Mastering the Art of Opening: Strategies for a Winning Start
+        !WIP!
       </h2>
       <div class="article-meta">
         <div class="author">

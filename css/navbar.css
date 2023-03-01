@@ -1,136 +1,119 @@
-.header {
-  display: block;
-  margin: 0 auto;
-  width: 100%;
-  max-width: 100%;
-  box-shadow: none;
-  position: fixed;
-  height: 60px !important;
-  overflow: hidden;
-  z-index: 10;
-}
-
-.main {
-  margin: 0 auto;
-  display: block;
-  height: 100%;
-  margin-top: 60px;
-}
-.mainInner {
-  display: table;
-  height: 100%;
-  width: 100%;
-  text-align: center;
-}
-.mainInner div {
-  display: table-cell;
-  vertical-align: middle;
-  font-size: 3em;
-  font-weight: bold;
-  letter-spacing: 1.25px;
-}
-#sidebarMenu {
-  height: 100%;
-  position: absolute;
-  left: 0;
-  width: 250px;
-  transform: translateX(-250px);
-  transition: transform 250ms ease-in-out;
-  margin-top: -200px;
-}
-.sidebarMenuInner {
+* {
   margin: 0;
   padding: 0;
-  margin-top: -370px;
-  background: linear-gradient(180deg, #fc466b 0%, #3f5efb 100%);
-}
-.sidebarMenuInner li {
-  list-style: none;
-  color: #fff;
-  text-transform: uppercase;
-  font-weight: bold;
-  padding: 20px;
-  cursor: pointer;
-  border-top: 2px solid black;
-  border-bottom: 2px solid black;
-  border-right: 2px solid black;
-}
-.sidebarMenuInner li span {
-  display: block;
-  font-size: 14px;
-  color: rgba(255, 255, 255, 0.5);
-}
-.sidebarMenuInner li a {
-  color: #fff;
-  text-transform: uppercase;
-  font-weight: bold;
-  cursor: pointer;
-  text-decoration: none;
-}
-input[type="checkbox"]:checked ~ #sidebarMenu {
-  transform: translateX(0);
+  box-sizing: border-box;
 }
 
-input[type="checkbox"] {
-  transition: all 0.3s;
-  box-sizing: border-box;
-  display: none;
+.menu {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 95%;
+  margin: 0 auto;
+  font-family: "Audiowide", sans-serif;
+  border-radius: 10px;
 }
-.sidebarIconToggle {
-  transition: all 0.3s;
-  box-sizing: border-box;
+
+ol {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0.5em 0;
+  list-style: none;
+  padding: 0.5em 0;
+}
+
+.menu-item {
+  color: #fff;
+  background: #444;
+  padding: 1em 0.5em;
+  position: relative;
+  border-bottom: 5px solid #999;
+  margin: 0 0.1em;
+  transition: border-bottom 0.23s ease-in-out, background 0.23s linear;
   cursor: pointer;
+  min-width: 8em;
+  text-align: center;
+  margin-left: 13px;
+  margin-right: 13px;
+  margin-top: -7px;
+}
+.menu-item[aria-haspopup="true"] {
+  border-bottom-color: #fc9b1b;
+}
+.menu-item:hover,
+.menu-item:focus-within {
+  border-bottom-color: #91d36b;
+  background: #333;
+}
+.menu-item:hover .sub-menu,
+.menu-item:hover .sub-menu:hover,
+.menu-item:focus-within .sub-menu,
+.menu-item:focus-within .sub-menu:hover {
+  visibility: visible;
+  opacity: 1;
+  display: flex;
+}
+
+.sub-menu {
+  flex-direction: column;
+  align-items: flex-start;
   position: absolute;
-  z-index: 99;
-  height: 100%;
-  width: 100%;
-  top: 22px;
-  left: 15px;
-  height: 22px;
-  width: 22px;
-}
-.spinner {
-  transition: all 0.3s;
-  box-sizing: border-box;
-  position: absolute;
-  height: 3px;
-  width: 100%;
-  background-color: #fff;
-}
-.horizontal {
-  transition: all 0.3s;
-  box-sizing: border-box;
-  position: relative;
-  float: left;
-  margin-top: 3px;
-}
-.diagonal.part-1 {
-  position: relative;
-  transition: all 0.3s;
-  box-sizing: border-box;
-  float: left;
-}
-.diagonal.part-2 {
-  transition: all 0.3s;
-  box-sizing: border-box;
-  position: relative;
-  float: left;
-  margin-top: 3px;
-}
-input[type="checkbox"]:checked ~ .sidebarIconToggle > .horizontal {
-  transition: all 0.3s;
-  box-sizing: border-box;
+  left: 0;
+  margin-top: 1em;
+  visibility: hidden;
+  display: none;
   opacity: 0;
+  margin-top: 20px;
+  color: #fff;
 }
-input[type="checkbox"]:checked ~ .sidebarIconToggle > .diagonal.part-1 {
-  transition: all 0.3s;
-  box-sizing: border-box;
-  transform: rotate(135deg);
-  margin-top: 8px;
+.sub-menu .menu-item {
+  padding: 0.5em 0;
+  padding: 1em;
+  width: 10em;
+  text-align: center;
+  z-index: 2;
 }
-input[type="checkbox"]:checked ~ .sidebarIconToggle > .diagonal.part-2 {
-  transition: all 0.3s;
-  box-sizing: border-box;
-  transform: rotate(-135deg);
-  margin-top: -9px;
+
+a {
+  color: #fff;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+a:focus {
+  outline: none;
+}
+
+@media (max-width: 690px) {
+  .menu {
+    width: 95%;
+    font-size: 16px;
+  }
+
+  .menu-item {
+    margin: 0.1em;
+  }
+  .menu-item:nth-child(1) {
+    order: 0;
+  }
+  .menu-item:nth-child(2) {
+    order: 1;
+  }
+  .menu-item:nth-child(3) {
+    order: 3;
+  }
+  .menu-item:nth-child(4) {
+    order: 4;
+  }
+  .menu-item:nth-child(5) {
+    order: 2;
+  }
+}
+@media (max-width: 480px) {
+  .menu {
+    font-size: 12px;
+  }
 }

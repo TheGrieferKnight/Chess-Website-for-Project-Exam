@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Arvo&amp;display=swap" />
+    <link rel="stylesheet" href="css/arcade-theme.css" />
+    <link rel="stylesheet" href="css/navbar.css" />
+    <title>Chess: A Game of Strategy and Skill</title>
+</head>
+
+<body>
+
+    <nav class="menu" role='navigation'>
+        <ol>
+            <a href="index.html">
+                <li class="menu-item">Home</li>
+            </a>
+            <li onclick="window.location='rules.html'" class="menu-item" aria-haspopup="true">Rules
+                <ol class="sub-menu" class="top" aria-label="submenu">
+                    <a href="castling.html">
+                        <li class="menu-item">Castling</li>
+                    </a>
+                    <a href="enpassant.html">
+                        <li class="menu-item">En Passant</li>
+                    </a>
+                    <a href="legalmoves.html">
+                        <li class="menu-item">Legal Moves</li>
+                    </a>
+                </ol>
+            </li>
+            <li class="menu-item" aria-haspopup="true">Openings
+                <ol class="sub-menu" aria-label="submenu">
+                    <a href="openings.html">
+                        <li class="menu-item">Overview</li>
+                    </a>
+                    <a href="the-kings-pawn-opening.html">
+                        <li class="menu-item">Kings Pawn Opening</li>
+                    </a>
+                    <a href="the-queens-pawn-opening.html">
+                        <li class="menu-item">The Queens Pawn Opening</li>
+                    </a>
+                    <a href="the-english-opening.html">
+                        <li class="menu-item">The English Opening</li>
+                    </a>
+                </ol>
+            </li>
+            <li onclick="window.location='endgames.html'" class="menu-item" aria-haspopup="true">Endgames
+                <ol class="sub-menu" aria-label="submenu">
+                    <a href="openings.html">
+                        <li class="menu-item">!WIP!</li>
+                    </a>
+                </ol>
+            </li>
+            <li class="menu-item" aria-haspopup="true">Strategies
+                <ol class="sub-menu" aria-label="submenu">
+                    <a href="opening-strategies.html">
+                        <li class="menu-item">Opening Strategies</li>
+                    </a>
+                    <a href="middle-game-strategies.html">
+                        <li class="menu-item">Middle Game Strategies</li>
+                    </a>
+                    <a href="end-game-strategies.html">
+                        <li class="menu-item">Endgame Strategies</li>
+                    </a>
+                </ol>
+            </li>
+            <a href="tactics.html">
+                <li class="menu-item">Tactics</li>
+            </a>
+        </ol>
+    </nav>
+
+    <div class="main">
+        <div class="head">
+            <h1 class="headline">The English Opening</h1>
+            <h2 class="subhead">
+                The English Opening is a chess opening beginning with 1. c4
+            </h2>
+            <div class="article-meta">
+                <div class="author">
+                    <svg id="author-avatar" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg"
+                        width="80" height="80">
+                        <title id="avatarTitle">Author Avatar</title>
+                        <desc id="avatarDesc">
+                            A cartoon avatar of a smiling purple square on a blue
+                            background.
+                        </desc>
+                        <mask id="mask__beam" maskUnits="userSpaceOnUse" x="0" y="0" width="36" height="36">
+                            <rect width="36" height="36" rx="72" fill="white"></rect>
+                        </mask>
+                        <g mask="url(#mask__beam)">
+                            <rect width="36" height="36" fill="#0ebeff"></rect>
+                            <path d="M13,19 a1,0.75 0 0,0 10,0" fill="white"></path>
+                            <rect x="12" y="14" width="1.5" height="2" rx="1" stroke="none" fill="white"></rect>
+                            <rect x="22" y="14" width="1.5" height="2" rx="1" stroke="none" fill="white"></rect>
+                        </g>
+                        </g>
+                    </svg>
+                    <div class="author__info">
+                        <p class="byline">By: Fabian Steineck</p>
+                        <p class="dateline">February 28, 2023</p>
+                    </div>
+                </div>
+                <p class="article-tags">
+                    <span class="tag">chess</span> <span class="tag">strategy games</span>
+                    <span class="tag featured">chess tactics</span>
+                </p>
+            </div>
+        </div>
+        <div class="content">
+            <figure>
+                <img src="assets/the-english-opening.png"
+                    alt="a smiling person in a pink hoodie, standing in front of a bright pink lighted arcade basketball game. " />
+                <figcaption>Screenshot by Fabian Steineck</figcaption>
+            </figure>
+            <p>Of all the openings that don’t begin by advancing the king’s pawn or the queen’s pawn, the English
+                Opening is among the most popular. White immediately grabs some central space and takes the d5 square
+                under control.</p>
+            <h2>How to Play the English Opening</h2>
+            <p>White may choose to transpose to a Queen's Pawn Opening or, less frequently, a King's Pawn Opening
+                depending on how black proceeds. For example, after 1. c4 Nf6 2. Nc3 e6, white can choose to play 3. d4,
+                which is a Queen's Pawn Opening.</p>
+            <p>This article will concentrate on lines that are unique to the English Opening and do not translate to
+                other systems. Consider the following three popular continuations:</p>
+            <p>• Black grabs the center with 1…e5 (The “Reversed Sicilian”)</p>
+            <p>• Black plays 1…c5 (The Symmetrical English)</p>
+            <p>• Black prepares to play 2…d5 and challenge white in the center</p>
+            <h2>1. c4 e5 – “The Reversed Sicilian”</h2>
+            <figure>
+                <img src="assets/the-reversed-sicilian.png"
+                    alt="a smiling person in a pink hoodie, standing in front of a bright pink lighted arcade basketball game. " />
+                <figcaption>Screenshot by Fabian Steineck</figcaption>
+            </figure>
+            <p>At first glance, this appears to be a Sicilian Defense with reversed colors, but the play frequently
+                deviates from the Sicilian. Because white gets an extra move in this opening, black is less likely to go
+                for some of the sharpest, most double-edged continuations, where every move counts, than white is in the
+                Sicilian Defense.</p>
+            <p>One of the main lines is 1. c4 e5 2. Nc3 Nf6 3. Nf3 Nc6 4. g3 Bb4 5. Bg2 0-0 6. 0-0 e4</p>
+            <figure>
+                <img src="assets/the-reversed-sicilian-defense-2.png"
+                    alt="a smiling person in a pink hoodie, standing in front of a bright pink lighted arcade basketball game. " />
+                <figcaption>Screenshot by Fabian Steineck</figcaption>
+            </figure>
+            <p>After 7. Ng5, it may appear that black is overextending his e-pawn, but white is attacking this pawn
+                three times! But after 7 p.m.... Bxc3 8. bxc3 Re8 black successfully defends it.</p>
+            <p>White has a large mass of central pawns, but he also has doubled pawns, and black's e-pawn can be a thorn
+                in white's side if not dealt with. White also keeps both bishops, whereas black does not. If the
+                position becomes available, white may benefit.</p>
+            <h2>1. c4 c5 – The Symmetrical English</h2>
+            <figure>
+                <img src="assets/the-symmetrical-english-1.png"
+                    alt="a smiling person in a pink hoodie, standing in front of a bright pink lighted arcade basketball game. " />
+                <figcaption>Screenshot by Fabian Steineck</figcaption>
+            </figure>
+            <p>This is a consistent way for black to respond to the English Opening. Black simply "copies" white's first
+                move and takes his own central space!</p>
+            <p>Because both sides have similar plans, it's common for the symmetry to continue for a few moves in this
+                line. For instance, 1. c4 c5 2. Nf3 Nf6 3. Nc3 Nc6 4. g3 g6 5. Bg2 Bg7 6. 0-0 0-0</p>
+            <figure>
+                <img src="assets/the-symmetrical-english-2.png"
+                    alt="a smiling person in a pink hoodie, standing in front of a bright pink lighted arcade basketball game. " />
+                <figcaption>Screenshot by Fabian Steineck</figcaption>
+            </figure>
+            <p>This is a common time for white to break the copycat game and capitalize on their first-move advantage!
+                White is frequently the first to create pawn tension with 7. d4.</p>
+            <p>White gains a space advantage whether black exchanges on d4 or allows white's queen's pawn to remain in
+                the center. Of course, black's position is solid, and he has no reason to be concerned.</p>
+            <h2>Black strikes back with …d5</h2>
+            <p>Another option black has is to prepare to challenge white’s c-pawn by playing …d5</p>
+            <p>The instant 1...d5?! Is not regarded favorably. Black cannot recapture with a pawn after 2. cxd5. After
+                2...Qxd5, White will be able to kick the queen away while developing a piece. 3. Nc3, and unlike in the
+                Scandinavian Defense (1. e4 d5), white gains the long-term advantage of two central pawns to one!</p>
+            <p>Instead, let’s consider 1. c4 e6 2. Nf3 d5</p>
+            <figure>
+                <img src="assets/the-english-opening-challenged.png"
+                    alt="a smiling person in a pink hoodie, standing in front of a bright pink lighted arcade basketball game. " />
+                <figcaption>Screenshot by Fabian Steineck</figcaption>
+            </figure>
+            <p>Of course, White can play 3. d4 and transpose to a line of the Queen's Gambit. However, white has a
+                couple of options for keeping the game in English Opening territory.</p>
+            <p>By playing 3. g3, White frequently ignores black's threat to the c-pawn. If black plays 3…dxc4:, White
+                can either rush to recover the pawn with 4. Qa4+, or simply continue development with 4. Bg2. The
+                temporary loss of the c-pawn in this manner, like in many Queen's Pawn Openings, is often not a concern
+                for white - it will be difficult for black to hold onto this pawn for long without falling behind in
+                development.</p>
+            <p>White, on the other hand, can defend the c-pawn. For instance, following 1. c4 e6 2. Nf3 d5 3. b3 Nf6 4.
+                g3 Be7 5. Bg2 0-0 6. 0-0 c5 7. Bb2:</p>
+            <figure>
+                <img src="assets/the-english-opening-challenged-2.png"
+                    alt="a smiling person in a pink hoodie, standing in front of a bright pink lighted arcade basketball game. " />
+                <figcaption>Screenshot by Fabian Steineck</figcaption>
+            </figure>
+            <p>White's playing a double-fianchetto system, where both bishops exert pressure on the center from afar.
+                White can later strike in the center with their central pawns that have yet to be touched.</p>
+            <h2>Conclusion</h2>
+            <p>The English Opening is a popular white opening system. The c-pawn effectively controls central space
+                while allowing white to maintain flexibility in the deployment of their two central pawns.</p>
+            <footer>
+                <p>Copyright 2023. All rights reserved.</p>
+            </footer>
+        </div>
+</body>
+
+</html>
+<script src="js/mode.js"></script>
+<script src="js/menu.js"></script>
