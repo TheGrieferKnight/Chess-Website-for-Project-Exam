@@ -1,199 +1,482 @@
 <!DOCTYPE html>
 <html lang="de">
-  <head>
-    <meta charset="UTF-8" />
-    <link
-      rel="stylesheet"
-      href="https://fonts.googleapis.com/css?family=Arvo&amp;display=swap"
-    />
-    <link rel="stylesheet" href="css/style.css" />
-    <title>Chess: A Game of Strategy and Skill</title>
-  </head>
-  <body>
-    <header>
-      <nav role="navigation" class="primary-navigation">
-        <ul>
-          <li><a href="index.html">Home</a></li>
-          <li>
-            <a href="rules.html">Rules &dtrif;</a>
-            <ul class="dropdown">
-              <li><a href="enpassant.html">En Passant</a></li>
-              <li><a href="#">Web Design</a></li>
-              <li><a href="#">Illustration</a></li>
-              <li><a href="#">Iconography</a></li>
-            </ul>
-          </li>
-          <li><a href="#">About</a></li>
-          <li><a href="#">Contact</a></li>
-        </ul>
-      </nav>
 
-      <hr />
-      <h1>King's Pawn Opening</h1>
+<head>
+  <meta charset="UTF-8" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Arvo&amp;display=swap" />
+  <link rel="stylesheet" href="T:Downloads/arcade-life-magazine-layout/dist/style.css" />
+  <link rel="stylesheet" href="css/navbar.css" />
+  <title>Chess: A Game of Strategy and Skill</title>
+</head>
+
+<body>
+
+  <div class="header"></div>
+  <input type="checkbox" class="openSidebarMenu" id="openSidebarMenu">
+  <label for="openSidebarMenu" class="sidebarIconToggle">
+    <div class="spinner diagonal part-1"></div>
+    <div class="spinner horizontal"></div>
+    <div class="spinner diagonal part-2"></div>
+  </label>
+  <div id="sidebarMenu">
+    <ul class="sidebarMenuInner">
+      <li><a href="https://vanila.io" target="_blank">Company</a></li>
+      <li><a href="https://instagram.com/plavookac" target="_blank">Instagram</a></li>
+      <li><a href="https://twitter.com/plavookac" target="_blank">Twitter</a></li>
+      <li><a href="https://www.youtube.com/channel/UCDfZM0IK6RBgud8HYGFXAJg" target="_blank">YouTube</a></li>
+      <li><a href="https://www.linkedin.com/in/plavookac/" target="_blank">Linkedin</a></li>
+    </ul>
+  </div>
+
+
+  </section>
+
+  <div class="main">
+    <div class="head">
+      <h1 class="headline">Opening Strategies</h1>
+      <h2 class="subhead">
+        Mastering the Art of Opening: Strategies for a Winning Start
+      </h2>
+      <div class="article-meta">
+        <div class="author">
+          <svg id="author-avatar" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg" width="80"
+            height="80">
+            <title id="avatarTitle">Author Avatar</title>
+            <desc id="avatarDesc">
+              A cartoon avatar of a smiling purple square on a blue
+              background.
+            </desc>
+            <mask id="mask__beam" maskUnits="userSpaceOnUse" x="0" y="0" width="36" height="36">
+              <rect width="36" height="36" rx="72" fill="white"></rect>
+            </mask>
+            <g mask="url(#mask__beam)">
+              <rect width="36" height="36" fill="#0ebeff"></rect>
+              <path d="M13,19 a1,0.75 0 0,0 10,0" fill="white"></path>
+              <rect x="12" y="14" width="1.5" height="2" rx="1" stroke="none" fill="white"></rect>
+              <rect x="22" y="14" width="1.5" height="2" rx="1" stroke="none" fill="white"></rect>
+            </g>
+            </g>
+          </svg>
+          <div class="author__info">
+            <p class="byline">By: Fabian Steineck</p>
+            <p class="dateline">February 28, 2023</p>
+          </div>
+        </div>
+        <p class="article-tags">
+          <span class="tag">chess</span> <span class="tag">strategy games</span>
+          <span class="tag featured">chess tactics</span>
+        </p>
+      </div>
+    </div>
+    <div class="content">
+      <figure>
+        <img src="assets/1.E4.png"
+          alt="a smiling person in a pink hoodie, standing in front of a bright pink lighted arcade basketball game. " />
+        <figcaption>Screenshot by Fabian Steineck</figcaption>
+      </figure>
       <p>
-        The King's Pawn Opening, which begins with 1. e4, is one of white's most
-        popular and aggressive opening moves.
+        White immediately seizes control of the center and opens lines of
+        development for his pieces - 1. e4 is clearly in line with opening
+        principles. Many top-tier chess players favor the King's Pawn Opening, and
+        World Champion Bobby Fischer even called it the "Best by test."
       </p>
-      <p>&nbsp;</p>
-    </header>
-    <p>
-      White immediately seizes control of the center and opens lines of
-      development for his pieces - 1. e4 is clearly in line with opening
-      principles. Many top-tier chess players favor the King's Pawn Opening, and
-      World Champion Bobby Fischer even called it the "Best by test."
-    </p>
-    <p>
-      Black has several responses to the King’s Pawn Opening. I’m going to break
-      them down into three categories:
-    </p>
-    <ul>
-      <li>
-        Black immediately seizes their share of central space (the symmetrical
-        1...e5 or the more double-edged Sicilian Defense: 1...c5).
-      </li>
-      <li>
-        With his d-pawn, Black attacks the white center. (The Scandinavian
+      <p>
+        Black has several responses to the King’s Pawn Opening. I’m going to break
+        them down into three categories:
+      </p>
+      <p>
+        • Black immediately seizes their share of central space (the symmetrical
+        1...e5 or the more double-edged Sicilian Defense: 1...c5).</p>
+      <p>• With his d-pawn, Black attacks the white center. (The Scandinavian
         Defense is played immediately after 1...d5, whereas the French Defense
         and Caro-Kann Defense are played after 1...e6 or 1...c6 with the
-        intention of following up with 2...d5.)
-      </li>
-      <li>
-        Other defenses where black is not attempting to occupy the center with a
+        intention of following up with 2...d5.)</p>
+      <p>• Other defenses where black is not attempting to occupy the center with a
         pawn. White is frequently allowed to construct a large center, but all
-        is not lost for black, as we will see shortly!
-      </li>
-    </ul>
-    <h2>Black Occupies the Center: 1…e5</h2>
-    <p>
-      For much of chess's history, 1. e4 e5 was by far the most common opening
-      move. We've discussed the benefits of white's first move, so why shouldn't
-      black want to replicate it?
-    </p>
-    <p>
-      Indeed, 1...e5 is advantageous for the same reasons that 1. E4 is
-      advantageous. This is the most common response taught to beginners, and it
-      is used all the way up to the World Championship level. Black establishes
-      a stronghold in the center and creates lines for his pieces to develop.
-    </p>
-    <p>
-      We'll spend a lot of time on this option because it has so many opening
-      variations!
-    </p>
-    <p>
-      White typically follows with the extremely logical 2. Nf3. It's difficult
-      to ask for more from an opening move than this - white develops a knight,
-      moves closer to kingside castling, and directly threatens black's e5 pawn!
-      The most common response is 2...Nc6 - black defends the threat against e5
-      while also developing his own piece.
-    </p>
-    <p>
-      At the end of this section, we'll look at alternatives to 2. Nf3 and
-      2...Nc6 - but first, let's see how the game can progress from the
-      following position:
-    </p>
-    <p>
-      The Ruy Lopez, perhaps the most well-known of the King's Pawn Openings, is
-      one of the oldest chess openings - after all, it's named after a 16th
-      century Spanish priest!
-    </p>
-    <p>
-      And there's a reason it's still popular. White creates a bishop, moves
-      closer to casting, and gives black something to worry about: White could
-      threaten to exchange this bishop for the black knight on c6, leaving
-      black's e5 pawn undefended at the right time!
-    </p>
-    <p>
-      3. Bc4, also known as the Italian Game, is another popular option for
-      white. White's bishop looks menacingly at the f7 square, black's weakest
-      point, and white is ready to castle next turn if desired.
-    </p>
-    <p>
-      The Scotch Game is composed of 3. d4. Before continuing with piece
-      development, White decides to open up the center and create some pawn
-      tension.
-    </p>
-    <p>
-      The Ponziani Opening, c3, is difficult to master. White's plan is
-      ambitious: on the next turn, he wants to play 4. d4, but unlike in the
-      Scotch (see above), if black exchanges his e-pawn for the d-pawn, white
-      will be able to recapture with a pawn and maintain a dominant grip in the
-      center!
-    </p>
-    <p>
-      3. After black plays the natural 3...Nf6, Nc3 frequently leads to the Four
-      Knights Game. The position remains symmetrical, and a little dull in
-      comparison to white's more ambitious options listed above - but hey,
-      having the move in a symmetrical position can't be a bad thing!
-    </p>
-    <p>
-      Before proceeding, consider some second-move alternatives for both white
-      and black following 1. e4 e5:
-    </p>
-    <p>Instead of the hugely popular 2. Nf3, white has some alternatives:</p>
-    <p>
-      The aggressive King's Gambit is f4. White immediately attempts to dislodge
-      black's e5 pawn from its stronghold in the center, even if it means giving
-      up a pawn!
-    </p>
-    <p>
-      F4 is the aggressive King's Gambit. White immediately tries to dislodge
-      black's e5 pawn from its central stronghold, even if it means giving up a
-      pawn!
-    </p>
-    <p>
-      The Center Game is d4. White can either recapture with the queen after
-      2...exd4, or play the aggressive 3. c3. This is the Danish Gambit, in
-      which white sacrifices a pawn in order to gain a development advantage.
-    </p>
-    <p>
-      Bc4, developing a bishop, is certainly reasonable, but this King's Pawn
-      Opening is unlikely to stay in original territory unless white makes some
-      speculative moves. White will most likely play Nf3 or Nc3 soon, switching
-      to an Italian Opening or Vienna Game (see above).
-    </p>
-    <p>However, some unique lines such as the Urusov Gambit are possible!</p>
-    <p>
-      Other options exist, such as 2. Qh5 (The Wayward Queen Attack), but are
-      generally regarded as no threat to black with proper play. After 2. Nf3,
-      black has some options if they want to avoid the logical 2...Nc6:
-    </p>
-    <p>
-      The Petrov Defense is 2...Nf6. Instead of defending the e-pawn, black
-      attacks white's e-pawn!
-    </p>
-    <p>
-      The Philidor Defense is 2...d6. Black defends the e5 pawn calmly, clearing
-      the way for his light bishop to develop.
-    </p>
-    <p>
-      The Latvian Gambit and the so-called Elephant Gambit are played at
-      2...f5?! and 2...d5?!, respectively. These pawn thrusts are considered
-      dubious, but they can be dangerous against an unprepared opponent.
-    </p>
-    <p>
-      2…f6? Is the fundamentally flawed Damiano Defense. This is not how you
-      defend your e-pawn! White can ignore the f6 pawn and go for e5. 3. Nxe5!
-      This black setup is refuted.
-    </p>
-    <h2>Black occupies the center: 1…c5 – The Sicilian Defense</h2>
-    <p>
-      The Sicilian Defense is a bold, ambitious response to the King's Pawn
-      Opening that appeals to players of all skill levels. In accordance with
-      opening principles, Black seizes their share of central space - but
-      immediately creates a stark imbalance in the position.
-    </p>
-    <p>
-      At first glance, this move appears to be inferior to 1...e5. Black gains
-      space in the Sicilian, but the move 1...c5 does not provide as many
-      opportunities for piece development. This pawn move exposes only the
-      queen, and we know that the queen does not usually develop early!
-    </p>
-    <p>But consider White's alternatives:</p>
-    <footer>
-      <p>Copyright 2023. All rights reserved.</p>
-    </footer>
-  </body>
+        is not lost for black, as we will see shortly!</p>
+      <figure>
+        <img src="assets/1.E4 E5.png"
+          alt="a smiling person in a pink hoodie, standing in front of a bright pink lighted arcade basketball game. " />
+        <figcaption>Screenshot by Fabian Steineck</figcaption>
+      </figure>
+      <h2>Black Occupies the Center: 1…e5</h2>
+      <p>
+        For much of chess's history, 1. e4 e5 was by far the most common opening
+        move. We've discussed the benefits of white's first move, so why shouldn't
+        black want to replicate it?
+      </p>
+      <p>
+        Indeed, 1...e5 is advantageous for the same reasons that 1. E4 is
+        advantageous. This is the most common response taught to beginners, and it
+        is used all the way up to the World Championship level. Black establishes
+        a stronghold in the center and creates lines for his pieces to develop.
+      </p>
+      <p>
+        We'll spend a lot of time on this option because it has so many opening
+        variations!
+      </p>
+      <p>
+        White typically follows with the extremely logical 2. Nf3. It's difficult
+        to ask for more from an opening move than this - white develops a knight,
+        moves closer to kingside castling, and directly threatens black's e5 pawn!
+        The most common response is 2...Nc6 - black defends the threat against e5
+        while also developing his own piece.
+      </p>
+      <p>
+        At the end of this section, we'll look at alternatives to 2. Nf3 and
+        2...Nc6 - but first, let's see how the game can progress from the
+        following position:
+      </p>
+      <figure>
+        <img src="assets/1.E4 E5 2.NF3 NC6.png"
+          alt="a smiling person in a pink hoodie, standing in front of a bright pink lighted arcade basketball game. " />
+        <figcaption>Screenshot by Fabian Steineck</figcaption>
+      </figure>
+      <p>
+        The Ruy Lopez, perhaps the most well-known of the King's Pawn Openings, is
+        one of the oldest chess openings - after all, it's named after a 16th
+        century Spanish priest!
+      </p>
+      <p>
+        And there's a reason it's still popular. White creates a bishop, moves
+        closer to casting, and gives black something to worry about: White could
+        threaten to exchange this bishop for the black knight on c6, leaving
+        black's e5 pawn undefended at the right time!
+      </p>
+      <p>
+        3. Bc4, also known as the Italian Game, is another popular option for
+        white. White's bishop looks menacingly at the f7 square, black's weakest
+        point, and white is ready to castle next turn if desired.
+      </p>
+      <p>
+        The Scotch Game is composed of 3. d4. Before continuing with piece
+        development, White decides to open up the center and create some pawn
+        tension.
+      </p>
+      <p>
+        The Ponziani Opening, c3, is difficult to master. White's plan is
+        ambitious: on the next turn, he wants to play 4. d4, but unlike in the
+        Scotch (see above), if black exchanges his e-pawn for the d-pawn, white
+        will be able to recapture with a pawn and maintain a dominant grip in the
+        center!
+      </p>
+      <p>
+        3. After black plays the natural 3...Nf6, Nc3 frequently leads to the Four
+        Knights Game. The position remains symmetrical, and a little dull in
+        comparison to white's more ambitious options listed above - but hey,
+        having the move in a symmetrical position can't be a bad thing!
+      </p>
+      <p>
+        Before proceeding, consider some second-move alternatives for both white
+        and black following 1. e4 e5:
+      </p>
+      <figure>
+        <img src="assets/1.E4 E5.png"
+          alt="a smiling person in a pink hoodie, standing in front of a bright pink lighted arcade basketball game. " />
+        <figcaption>Screenshot by Fabian Steineck</figcaption>
+      </figure>
+      <p>Instead of the hugely popular 2. Nf3, white has some alternatives:</p>
+      <p>
+        The aggressive King's Gambit is f4. White immediately attempts to dislodge
+        black's e5 pawn from its stronghold in the center, even if it means giving
+        up a pawn!
+      </p>
+      <p>
+        F4 is the aggressive King's Gambit. White immediately tries to dislodge
+        black's e5 pawn from its central stronghold, even if it means giving up a
+        pawn!
+      </p>
+      <p>
+        The Center Game is d4. White can either recapture with the queen after
+        2...exd4, or play the aggressive 3. c3. This is the Danish Gambit, in
+        which white sacrifices a pawn in order to gain a development advantage.
+      </p>
+      <p>
+        Bc4, developing a bishop, is certainly reasonable, but this King's Pawn
+        Opening is unlikely to stay in original territory unless white makes some
+        speculative moves. White will most likely play Nf3 or Nc3 soon, switching
+        to an Italian Opening or Vienna Game (see above).
+      </p>
+      <p>However, some unique lines such as the Urusov Gambit are possible!</p>
+      <p>
+        Other options exist, such as 2. Qh5 (The Wayward Queen Attack), but are
+        generally regarded as no threat to black with proper play. After 2. Nf3,
+        black has some options if they want to avoid the logical 2...Nc6:
+      </p>
+      <figure>
+        <img src="assets/KnightF3.png"
+          alt="a smiling person in a pink hoodie, standing in front of a bright pink lighted arcade basketball game. " />
+        <figcaption>Screenshot by Fabian Steineck</figcaption>
+      </figure>
+      <p>
+        The Petrov Defense is 2...Nf6. Instead of defending the e-pawn, black
+        attacks white's e-pawn!
+      </p>
+      <p>
+        The Philidor Defense is 2...d6. Black defends the e5 pawn calmly, clearing
+        the way for his light bishop to develop.
+      </p>
+      <p>
+        The Latvian Gambit and the so-called Elephant Gambit are played at
+        2...f5?! and 2...d5?!, respectively. These pawn thrusts are considered
+        dubious, but they can be dangerous against an unprepared opponent.
+      </p>
+      <p>
+        2…f6? Is the fundamentally flawed Damiano Defense. This is not how you
+        defend your e-pawn! White can ignore the f6 pawn and go for e5. 3. Nxe5!
+        This black setup is refuted.
+      </p>
+      <h2>Black occupies the center: 1…c5 – The Sicilian Defense</h2>
+      <figure>
+        <img src="assets/the-sicilian-defense.png"
+          alt="a smiling person in a pink hoodie, standing in front of a bright pink lighted arcade basketball game. " />
+        <figcaption>Screenshot by Fabian Steineck</figcaption>
+      </figure>
+      <p>
+        The Sicilian Defense is a bold, ambitious response to the King's Pawn
+        Opening that appeals to players of all skill levels. In accordance with
+        opening principles, Black seizes their share of central space - but
+        immediately creates a stark imbalance in the position.
+      </p>
+      <p>
+        At first glance, this move appears to be inferior to 1...e5. Black gains
+        space in the Sicilian, but the move 1...c5 does not provide as many
+        opportunities for piece development. This pawn move exposes only the
+        queen, and we know that the queen does not usually develop early!
+      </p>
+      <p>But consider White's alternatives:</p>
+      <p>
+        True, white is likely to gain an advantage in development in the Sicilian,
+        but if white wants to open the center and try to exploit it before black
+        does, white will almost certainly need to play d4 at some point. Then
+        black gets to exchange his c-pawn for white's more central d-pawn.
+      </p>
+      <p>
+        Black has the long-term advantage of having two central pawns to white's
+        one, and the black position is compact and without weaknesses. Of course,
+        if white does not want to play an early d4 pawn break, he has other
+        options. White will occasionally play an early f4 and gradually build up
+        on the kingside, where white is assured of a space advantage.
+      </p>
+      <p>
+        In such cases, Black frequently builds up on the queenside and
+        occasionally organizes a strike in the center himself with...d5, if his
+        piece development justifies it.
+      </p>
+      <p>
+        Whatever white does, black is guaranteed an unbalanced, dynamic game - a
+        Sicilian Defense player's dream!
+      </p>
+      <h2>Black Center Strikes: 1...d5 - The Scandinavian Defense</h2>
+      <figure>
+        <img src="assets/the-scandinavian-defense.png"
+          alt="a smiling person in a pink hoodie, standing in front of a bright pink lighted arcade basketball game. " />
+        <figcaption>Screenshot by Fabian Steineck</figcaption>
+      </figure>
+      <p>
+        It's tempting to strike white's King's Pawn right away. Black immediately
+        makes it clear that white's e-pawn will not be allowed to stay on e4 for
+        long!
+      </p>
+      <p>
+        It's tempting to immediately strike white's King's Pawn. Black quickly
+        establishes that white's e-pawn will not be allowed to remain on e4 for
+        long!
+      </p>
+      <p>
+        It's tempting to strike white's King's Pawn right away. White's e-pawn
+        will not be allowed to remain on e4 for long, as Black quickly
+        establishes!
+      </p>
+      <h2>Black Strikes at the Center: 1…e6 – The French Defense</h2>
+      <figure>
+        <img src="assets/the-french-defense1.png"
+          alt="a smiling person in a pink hoodie, standing in front of a bright pink lighted arcade basketball game. " />
+        <figcaption>Screenshot by Fabian Steineck</figcaption>
+      </figure>
+      <p>
+        The French Defense to the King's Pawn Opening is formed by first playing
+        1...e6 and then 2...d5.
+      </p>
+      <p>
+        The obvious disadvantage of spending a move preparing to strike before
+        lashing out in the center is that white gains another move to bolster
+        their center! After 1. e4 e6, the most common move is 2. d4. White
+        occupies the entire center for the time being, and both white bishops have
+        open lines to develop on.
+      </p>
+      <p>After 1. e4 e6 2. d4 d5:</p>
+      <figure>
+        <img src="assets/the-french-defense2.png"
+          alt="a smiling person in a pink hoodie, standing in front of a bright pink lighted arcade basketball game. " />
+        <figcaption>Screenshot by Fabian Steineck</figcaption>
+      </figure>
+      <p>
+        3. exd5 is now harmless, but playable, in contrast to the Scandinavian
+        Defense (see above). Black retains their central foothold by recapturing
+        with the e-pawn rather than the queen.
+      </p>
+      <p>
+        Instead, white frequently plays 3. e5, securing a space advantage and
+        locking up the center, or 3. Nd2 or 3. Nc3, simply defending the e4 pawn
+        threat.
+      </p>
+      <p>
+        The French Defense has a significant disadvantage in that black's
+        light-square bishop on c8 is severely restricted by black's pawns. If
+        black does not solve the "problem of the bishop," this can be a long-term
+        problem for him throughout the game.
+      </p>
+      <p>
+        Nonetheless, the French Defense is still popular at nearly all chess
+        levels.
+      </p>
+      <h2>Black Strikes at the Center: 1…c6 – The Caro-Kann Defense</h2>
+      <figure>
+        <img src="assets\the-caro-kann-defense1.png"
+          alt="a smiling person in a pink hoodie, standing in front of a bright pink lighted arcade basketball game. " />
+        <figcaption>Screenshot by Fabian Steineck</figcaption>
+      </figure>
+      <p>
+        It would be difficult to understand the purpose of this move without first
+        understanding the French and Scandinavian defenses mentioned above.
+      </p>
+      <p>
+        Consider the following position after 1. e4 c6 2. d4 d5, which is
+        analogous to the French Defense position in the preceding section:
+      </p>
+      <figure>
+        <img src="assets\the-caro-kann-defense2.png"
+          alt="a smiling person in a pink hoodie, standing in front of a bright pink lighted arcade basketball game. " />
+        <figcaption>Screenshot by Fabian Steineck</figcaption>
+      </figure>
+      <p>
+        Black avoids the disadvantage of the Scandinavian Defense: if white
+        captures on d5, black can recapture with a pawn and keep control of the
+        center.
+      </p>
+      <p>
+        Black also tries to avoid the disadvantages of the French Defense! For the
+        time being, Black leaves the development path for his light-squared bishop
+        open. Black wants to develop this bishop to f5 or g4, then play...e6 to
+        clear the way for the other bishop and complete development.
+      </p>
+      <p>
+        Black achieves this goal in many of the most common continuations. Rather
+        than being a lame duck on c8, as in the French Defense, black's
+        light-squared-bishop in the Caro-Kann is frequently rewarded.
+      </p>
+      <p>
+        Is the Caro-Kann truly the best of both worlds? Not so quickly. The
+        obvious disadvantage is that this clever operation takes time, and 1...c6
+        isn't a particularly useful move for immediate piece development.
+      </p>
+      <p>
+        However, the Caro remains a reputable opening used by several Grandmasters
+        - and it has been a staple of my opening repertoire throughout my chess
+        career, so I'm biased!
+      </p>
+      <h2>Other Defenses: 1…Nf6 – The Alekhine Defense</h2>
+      <figure>
+        <img src="the-alekhine-defense.png"
+          alt="a smiling person in a pink hoodie, standing in front of a bright pink lighted arcade basketball game. " />
+        <figcaption>Screenshot by Fabian Steineck</figcaption>
+      </figure>
+      <p>This provocative move, named after World Champion Alexander Alekhine, attacks white's e-pawn from move 1 -
+        before
+        black has secured any central space!</p>
+      <p>The obvious disadvantage of this opening is that white can play 2. e5, gaining more space and kicking away this
+        knight. White has a clear space advantage after 1. e4 Nf6 2. e5 Nd5 3. d4, and can even play c4 soon, gaining
+        more
+        space and kicking the black knight again!</p>
+      <p>In the near future, white may play c4 and f4 - the "Four Pawns Attack." In an attempt to punish black for the
+        provocative opening choice, white seeks to gain an overwhelming space advantage and deprive the black pieces of
+        any
+        good squares!
+      <p>As a result, the Alekhine Defense has never been regarded as a top-tier defense against the King's Pawn
+        Opening,
+        but it's not as bad as it appears! White can overextend if not careful, and black has some setups figured out
+        that
+        allow his pieces to breathe freely despite white's space advantage. The nearly universal 3...d6 begins the
+        process
+        of tearing down the white center.</p>
+      <h2>Other Defenses: 1…d6 – The Pirc Defense</h2>
+      <figure>
+        <img src="assets\thepircdefense.png" alt="1.E4 D6" />
+        <figcaption>Screenshot by Fabian Steineck</figcaption>
+      </figure>
+      <p>When black does not want to occupy the center, the Pirc Defense is another option. Black wants to play 2...Nf6,
+        attacking white's e-pawn, but first plays 1...d6 to avoid being hit with an early e5 from white (as in the
+        Alekhine
+        Defense above)</p>
+      <p>Early on, Black frequently plays...g6,...Bg7, and...0-0. While black does not directly occupy the center, his
+        knight and dark-square bishop exert indirect pressure on white's center, and the black king is safely tucked
+        away.
+        Later, with...e5,...c5, or even...d5, black may attempt to organize a strike at the white center.</p>
+      <p>The Pirc's adaptability has piqued the interest of many chess players of all levels. However, the disadvantage
+        is
+        clear: white faces no challenge to their central control early on and is free to play 2. d4 and develop in
+        nearly
+        any way they want.</p>
+      <h2>Other Defenses: 1…g6 – The Modern Defense</h2>\
+      <figure>
+        <img src="assets/the-modern-defense.png" alt="1.E4 G6" />
+        figcaption>Screenshot by Fabian Steineck</figcaption>
+      </figure>
+      <p>The Modern Defense is a close relative of the Pirc Defense (see above), and it frequently transposes to the
+        Pirc
+        if
+        black plays...d6 and...Nf6 in the near future. By placing the dark bishop on g7, black foregoes the fight for
+        central dominance in favor of flexibility and indirect pressure on white's center.</p>
+      <h2>Other Defenses: 1…b6 – The Owen Defense</h2>
+      <figure>
+        <img src="assets\the-owen-defense.png" alt="1.E4 G6" />
+        figcaption>Screenshot by Fabian Steineck</figcaption>
+      </figure>
+      <p>Black attempts to position their light bishop on b7 and attack the white e-pawn from a distance. To increase
+        the
+        pressure, Black will frequently play...Nf6.</p>
+      <p>If white defends the e-pawn with Nc3, black may play...Bb4 (after first playing...e6 to clear the path for the
+        dark
+        bishop), threatening to exchange off white's e-pawn defender. Sometimes black will play a later...d5. Everything
+        is
+        aimed at e4!</p>
+      <p>The disadvantage, as with the Modern and Pirc defenses, is obvious: White frequently gains a space advantage
+        because black does not contest the center early on. The Owen Defense is one of black's most uncommon defenses
+        against the King's Pawn Opening.</p>
+      <p>It's worth noting that we can get to the Owen Defense using different move orders, such as 1. e4 e6. 2. d4 b6.
+        Despite starting with 1...e6, this is hardly a "French Defense" because black's intention was not to prepare
+        the...d5 thrust. Black switches to the Owen Defense by playing the typical early...b6.</p>
+      <h2>Other Defenses: 1…Nc6 – The Nimzowitsch Defense</h2>
+      <figure>
+        <img src="assets/the-nimzowitsch-defense.png"
+          alt="a smiling person in a pink hoodie, standing in front of a bright pink lighted arcade basketball game. " />
+        <figcaption>Screenshot by Fabian Steineck</figcaption>
+      </figure>
+      <p>Nimzowitsch was a chess legend, but he's better known for other contributions to opening theory than this one.
+        Because white's d-pawn is defended by the queen, 1...Nc6 has no effect on the game.</p>
+      <p>After 2...e5, White can also play 2. Nf3, allowing black to transpose to a standard 1. e4 e5 opening. Black's
+        attempts to avoid a dual King's Pawn Opening are mostly either passive (2...d6) or dubious (2...f5). And if
+        black
+        is
+        fine with playing 2...e5 and transposing, one might wonder why they aren't just playing 1...e5 on move one in
+        the
+        first place!</p>
+      <p>The Nimzowitsch Defense has never been popular with the general public, but developing a piece on move one
+        can't
+        be
+        all bad.</p>
+      <h2>Other Defenses: Miscellaneous</h2>
+      <p>Other than the moves mentioned above, other first moves by black are generally ignored. Moves like 1...a6?!,
+        1...h6?!, and 1...f6 have no effect. White can gain more space by playing 2. d4.</p>
+      </p>
+
+      <footer>
+        <p>Copyright 2023. All rights reserved.</p>
+      </footer>
+    </div>
+</body>
+
 </html>
 <script src="js/mode.js"></script>
 <script src="js/menu.js"></script>
-<!DOCTYPE html>
