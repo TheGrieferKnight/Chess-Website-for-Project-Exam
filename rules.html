@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="de">
+<html lang="en">
 
 <head>
   <meta charset="UTF-8" />
@@ -11,177 +11,196 @@
 
 <body>
 
-  <nav class="menu" role='navigation'>
-    <ol>
-      <a href="index.html">
-        <li class="menu-item">Home</li>
-      </a>
-      <li onclick="window.location='rules.html'" class="menu-item" aria-haspopup="true">Rules
-        <ol class="sub-menu" class="top" aria-label="submenu">
-          <a href="castling.html">
-            <li class="menu-item">Castling</li>
-          </a>
-          <a href="enpassant.html">
-            <li class="menu-item">En Passant</li>
-          </a>
-          <a href="legalmoves.html">
-            <li class="menu-item">Legal Moves</li>
-          </a>
-        </ol>
-      </li>
-      <li class="menu-item" aria-haspopup="true">Openings
-        <ol class="sub-menu" aria-label="submenu">
-          <a href="openings.html">
-            <li class="menu-item">Overview</li>
-          </a>
-          <a href="the-kings-pawn-opening.html">
-            <li class="menu-item">Kings Pawn Opening</li>
-          </a>
-          <a href="the-queens-pawn-opening.html">
-            <li class="menu-item">The Queens Pawn Opening</li>
-          </a>
-          <a href="the-english-opening.html">
-            <li class="menu-item">The English Opening</li>
-          </a>
-        </ol>
-      </li>
-      <li onclick="window.location='endgames.html'" class="menu-item" aria-haspopup="true">Endgames
-        <ol class="sub-menu" aria-label="submenu">
-          <a href="openings.html">
-            <li class="menu-item">!WIP!</li>
-          </a>
-        </ol>
-      </li>
-      <li class="menu-item" aria-haspopup="true">Strategies
-        <ol class="sub-menu" aria-label="submenu">
-          <a href="opening-strategies.html">
-            <li class="menu-item">Opening Strategies</li>
-          </a>
-          <a href="middle-game-strategies.html">
-            <li class="menu-item">Middle Game Strategies</li>
-          </a>
-          <a href="end-game-strategies.html">
-            <li class="menu-item">Endgame Strategies</li>
-          </a>
-        </ol>
-      </li>
-      <a href="tactics.html">
-        <li class="menu-item">Tactics</li>
-      </a>
-    </ol>
-  </nav>
+  <!DOCTYPE html>
+  <html lang="en">
 
-  <div class="main">
-    <div class="head">
-      <h1 class="headline">Rules of Chess</h1>
-      <h2 class="subhead">
-        This article will explain the rules of chess to you in detail!
-      </h2>
-      <div class="article-meta">
-        <div class="author">
-          <svg id="author-avatar" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg" width="80"
-            height="80">
-            <title id="avatarTitle">Author Avatar</title>
-            <desc id="avatarDesc">
-              A cartoon avatar of a smiling purple square on a blue
-              background.
-            </desc>
-            <mask id="mask__beam" maskUnits="userSpaceOnUse" x="0" y="0" width="36" height="36">
-              <rect width="36" height="36" rx="72" fill="white"></rect>
-            </mask>
-            <g mask="url(#mask__beam)">
-              <rect width="36" height="36" fill="#0ebeff"></rect>
-              <path d="M13,19 a1,0.75 0 0,0 10,0" fill="white"></path>
-              <rect x="12" y="14" width="1.5" height="2" rx="1" stroke="none" fill="white"></rect>
-              <rect x="22" y="14" width="1.5" height="2" rx="1" stroke="none" fill="white"></rect>
-            </g>
-            </g>
-          </svg>
-          <div class="author__info">
-            <p class="byline">By: Fabian Steineck</p>
-            <p class="dateline">February 28, 2023</p>
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Arvo&amp;display=swap" />
+    <link rel="stylesheet" href="css/arcade-theme.css" />
+    <link rel="stylesheet" href="css/navbar.css" />
+    <title>Chess: A Game of Strategy and Skill</title>
+  </head>
+
+  <body>
+
+    <nav class="menu" role='navigation'>
+      <ol>
+        <a href="index.html">
+          <li class="menu-item">Home</li>
+        </a>
+        <li onclick="window.location='rules.html'" class="menu-item" aria-haspopup="true">Rules
+          <ol class="sub-menu" class="top" aria-label="submenu">
+            <a href="castling.html">
+              <li class="menu-item">Castling</li>
+            </a>
+            <a href="enpassant.html">
+              <li class="menu-item">En Passant</li>
+            </a>
+            <a href="legalmoves.html">
+              <li class="menu-item">Legal Moves</li>
+            </a>
+          </ol>
+        </li>
+        <li class="menu-item" aria-haspopup="true">Openings
+          <ol class="sub-menu" aria-label="submenu">
+            <a href="openings.html">
+              <li class="menu-item">Overview</li>
+            </a>
+            <a href="the-kings-pawn-opening.html">
+              <li class="menu-item">Kings Pawn Opening</li>
+            </a>
+            <a href="the-queens-pawn-opening.html">
+              <li class="menu-item">The Queens Pawn Opening</li>
+            </a>
+            <a href="the-english-opening.html">
+              <li class="menu-item">The English Opening</li>
+            </a>
+            <a href="the-sicilian-defense.html">
+              <li class="menu-item">The Sicilian Defense</li>
+            </a>
+          </ol>
+        </li>
+        <li onclick="window.location='endgames.html'" class="menu-item" aria-haspopup="true">Endgames
+          <ol class="sub-menu" aria-label="submenu">
+            <a href="openings.html">
+              <li class="menu-item">!WIP!</li>
+            </a>
+          </ol>
+        </li>
+        <li class="menu-item" aria-haspopup="true">Strategies
+          <ol class="sub-menu" aria-label="submenu">
+            <a href="opening-strategies.html">
+              <li class="menu-item">Opening Strategies</li>
+            </a>
+            <a href="middle-game-strategies.html">
+              <li class="menu-item">Middle Game Strategies</li>
+            </a>
+            <a href="end-game-strategies.html">
+              <li class="menu-item">Endgame Strategies</li>
+            </a>
+          </ol>
+        </li>
+        <a href="tactics.html">
+          <li class="menu-item">Tactics</li>
+        </a>
+      </ol>
+    </nav>
+
+    <p>&nbsp;</p>
+
+    <div class="main">
+      <div class="head">
+        <h1 class="headline">Rules of Chess</h1>
+        <h2 class="subhead">
+          This article will explain the rules of chess to you in detail!
+        </h2>
+        <div class="article-meta">
+          <div class="author">
+            <svg id="author-avatar" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg" width="80"
+              height="80">
+              <title id="avatarTitle">Author Avatar</title>
+              <desc id="avatarDesc">
+                A cartoon avatar of a smiling purple square on a blue
+                background.
+              </desc>
+              <mask id="mask__beam" maskUnits="userSpaceOnUse" x="0" y="0" width="36" height="36">
+                <rect width="36" height="36" rx="72" fill="white"></rect>
+              </mask>
+              <g mask="url(#mask__beam)">
+                <rect width="36" height="36" fill="#0ebeff"></rect>
+                <path d="M13,19 a1,0.75 0 0,0 10,0" fill="white"></path>
+                <rect x="12" y="14" width="1.5" height="2" rx="1" stroke="none" fill="white"></rect>
+                <rect x="22" y="14" width="1.5" height="2" rx="1" stroke="none" fill="white"></rect>
+              </g>
+              </g>
+            </svg>
+            <div class="author__info">
+              <p class="byline">By: Fabian Steineck</p>
+              <p class="dateline">February 28, 2023</p>
+            </div>
           </div>
+          <p class="article-tags">
+            <span class="tag">chess</span> <span class="tag">strategy games</span>
+            <span class="tag featured">chess tactics</span>
+          </p>
         </div>
-        <p class="article-tags">
-          <span class="tag">chess</span> <span class="tag">strategy games</span>
-          <span class="tag featured">chess tactics</span>
-        </p>
       </div>
-    </div>
-    <div class="content">
-      <p>
-        Chess is a two-player strategy game played on a checkered board consisting
-        of 64 squares, 32 of which are light and 32 of which are dark. The game is
-        won by checkmating the opponent’s king, which means putting the king in a
-        position where it is under attack (in check) and there is no legal move to
-        escape capture (mate).
-      </p>
-      <p>
-        Each player starts with 16 pieces: one king, one queen, two rooks, two
-        knights, two bishops, and eight pawns. The game begins with the pieces
-        arranged on the board as follows:
-      </p>
-      <p>
-      <figure>
-        <img src="assets\chessboard.png" alt="Bild konnte nicht geladen werden" style="display: block; margin: auto" />
-        <figcaption>Screenshot by Fabian Steineck</figcaption>
-      </figure>
-      </p>
-      <p>The pieces move as follows:</p>
-      <ul>
-        <p>• The king moves one square in any direction.</p>
+      <div class="content">
         <p>
-          • The queen moves any number of squares in a straight line along a rank,
-          file, or diagonal.
-        </p>
-        <p>• The rook moves any number of squares along a rank or file.</p>
-        <p>• The bishop moves any number of squares along a diagonal.</p>
-        <p>
-          • The knight moves in an L-shape, two squares in one direction and then
-          one square at a right angle.
+          Chess is a two-player strategy game played on a checkered board consisting
+          of 64 squares, 32 of which are light and 32 of which are dark. The game is
+          won by checkmating the opponent’s king, which means putting the king in a
+          position where it is under attack (in check) and there is no legal move to
+          escape capture (mate).
         </p>
         <p>
-          • The pawn moves forward one square, but on its first move it may move two
-          squares. Pawns capture diagonally one square forward. Pawns can also
-          perform an en passant capture if an opponent’s pawn advances two squares
-          from its starting position and lands next to the first pawn.
+          Each player starts with 16 pieces: one king, one queen, two rooks, two
+          knights, two bishops, and eight pawns. The game begins with the pieces
+          arranged on the board as follows:
         </p>
         <p>
-          A piece may be moved to a square occupied by an opponent’s piece, which is
-          then captured and removed from the board. A player may not move a piece
-          onto a square occupied by one of their own pieces.
+        <figure>
+          <img src="assets\chessboard.png" alt="Bild konnte nicht geladen werden"
+            style="display: block; margin: auto" />
+          <figcaption>Screenshot by Fabian Steineck</figcaption>
+        </figure>
         </p>
-        <p>
-          The game is played with alternating turns, with white moving first. A
-          player may not make a move that puts or leaves their own king in check. If
-          a player’s king is in check, they must make a move that removes the threat
-          of capture, either by moving the king, blocking the attacking piece, or
-          capturing the attacking piece.
-        </p>
-        <p>The game can end in several ways:</p>
+        <p>The pieces move as follows:</p>
         <ul>
+          <p>• The king moves one square in any direction.</p>
           <p>
-            • Checkmate: When a player’s king is in check and there is no legal move
-            to escape capture.
+            • The queen moves any number of squares in a straight line along a rank,
+            file, or diagonal.
+          </p>
+          <p>• The rook moves any number of squares along a rank or file.</p>
+          <p>• The bishop moves any number of squares along a diagonal.</p>
+          <p>
+            • The knight moves in an L-shape, two squares in one direction and then
+            one square at a right angle.
           </p>
           <p>
-            • Stalemate: When a player is not in check, but has no legal move to make.
+            • The pawn moves forward one square, but on its first move it may move two
+            squares. Pawns capture diagonally one square forward. Pawns can also
+            perform an en passant capture if an opponent’s pawn advances two squares
+            from its starting position and lands next to the first pawn.
           </p>
           <p>
-            • Draw: When the same position occurs three times, when both players agree
-            to a draw, or when a player has insufficient material to checkmate their
-            opponent (e.g. only a king left on the board).
+            A piece may be moved to a square occupied by an opponent’s piece, which is
+            then captured and removed from the board. A player may not move a piece
+            onto a square occupied by one of their own pieces.
           </p>
-        </ul>
-        <p>I hope this helps you understand the rules of chess!</p>
+          <p>
+            The game is played with alternating turns, with white moving first. A
+            player may not make a move that puts or leaves their own king in check. If
+            a player’s king is in check, they must make a move that removes the threat
+            of capture, either by moving the king, blocking the attacking piece, or
+            capturing the attacking piece.
+          </p>
+          <p>The game can end in several ways:</p>
+          <ul>
+            <p>
+              • Checkmate: When a player’s king is in check and there is no legal move
+              to escape capture.
+            </p>
+            <p>
+              • Stalemate: When a player is not in check, but has no legal move to make.
+            </p>
+            <p>
+              • Draw: When the same position occurs three times, when both players agree
+              to a draw, or when a player has insufficient material to checkmate their
+              opponent (e.g. only a king left on the board).
+            </p>
+          </ul>
+          <p>I hope this helps you understand the rules of chess!</p>
 
-        <footer>
-          <p>Copyright 2023. All rights reserved.</p>
-        </footer>
-    </div>
-</body>
+          <footer>
+            <p>Copyright 2023. All rights reserved.</p>
+          </footer>
+      </div>
+  </body>
 
-</html>
-<script src="js/mode.js"></script>
-<script src="js/menu.js"></script>
-<!DOCTYPE html>
+  </html>
+  <script src="js/mode.js"></script>
+  <script src="js/menu.js"></script>
+  <!DOCTYPE html>

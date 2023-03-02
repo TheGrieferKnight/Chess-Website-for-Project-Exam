@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Arvo&amp;display=swap" />
+    <link rel="stylesheet" href="css/arcade-theme.css" />
+    <link rel="stylesheet" href="css/navbar.css" />
+    <title>Chess: A Game of Strategy and Skill</title>
+</head>
+
+<body>
+
+    <nav class="menu" role='navigation'>
+        <ol>
+            <a href="index.html">
+                <li class="menu-item">Home</li>
+            </a>
+            <li onclick="window.location='rules.html'" class="menu-item" aria-haspopup="true">Rules
+                <ol class="sub-menu" class="top" aria-label="submenu">
+                    <a href="castling.html">
+                        <li class="menu-item">Castling</li>
+                    </a>
+                    <a href="enpassant.html">
+                        <li class="menu-item">En Passant</li>
+                    </a>
+                    <a href="legalmoves.html">
+                        <li class="menu-item">Legal Moves</li>
+                    </a>
+                </ol>
+            </li>
+            <li class="menu-item" aria-haspopup="true">Openings
+                <ol class="sub-menu" aria-label="submenu">
+                    <a href="openings.html">
+                        <li class="menu-item">Overview</li>
+                    </a>
+                    <a href="the-kings-pawn-opening.html">
+                        <li class="menu-item">Kings Pawn Opening</li>
+                    </a>
+                    <a href="the-queens-pawn-opening.html">
+                        <li class="menu-item">The Queens Pawn Opening</li>
+                    </a>
+                    <a href="the-english-opening.html">
+                        <li class="menu-item">The English Opening</li>
+                    </a>
+                    <a href="the-sicilian-defense.html">
+                        <li class="menu-item">The Sicilian Defense</li>
+                    </a>
+                </ol>
+            </li>
+            <li onclick="window.location='endgames.html'" class="menu-item" aria-haspopup="true">Endgames
+                <ol class="sub-menu" aria-label="submenu">
+                    <a href="openings.html">
+                        <li class="menu-item">!WIP!</li>
+                    </a>
+                </ol>
+            </li>
+            <li class="menu-item" aria-haspopup="true">Strategies
+                <ol class="sub-menu" aria-label="submenu">
+                    <a href="opening-strategies.html">
+                        <li class="menu-item">Opening Strategies</li>
+                    </a>
+                    <a href="middle-game-strategies.html">
+                        <li class="menu-item">Middle Game Strategies</li>
+                    </a>
+                    <a href="end-game-strategies.html">
+                        <li class="menu-item">Endgame Strategies</li>
+                    </a>
+                </ol>
+            </li>
+            <a href="tactics.html">
+                <li class="menu-item">Tactics</li>
+            </a>
+        </ol>
+    </nav>
+
+    <p>&nbsp;</p>
+
+    <div class="main">
+        <div class="head">
+            <h1 class="headline"> Sicilian Defense</h1>
+            <h2 class="subhead">
+                The Sicilian Defense is a King&rsquo;s Pawn Opening beginning with 1. e4 c5
+            </h2>
+            <div class="article-meta">
+                <div class="author">
+                    <svg id="author-avatar" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg"
+                        width="80" height="80">
+                        <title id="avatarTitle">Author Avatar</title>
+                        <desc id="avatarDesc">
+                            A cartoon avatar of a smiling purple square on a blue
+                            background.
+                        </desc>
+                        <mask id="mask__beam" maskUnits="userSpaceOnUse" x="0" y="0" width="36" height="36">
+                            <rect width="36" height="36" rx="72" fill="white"></rect>
+                        </mask>
+                        <g mask="url(#mask__beam)">
+                            <rect width="36" height="36" fill="#0ebeff"></rect>
+                            <path d="M13,19 a1,0.75 0 0,0 10,0" fill="white"></path>
+                            <rect x="12" y="14" width="1.5" height="2" rx="1" stroke="none" fill="white"></rect>
+                            <rect x="22" y="14" width="1.5" height="2" rx="1" stroke="none" fill="white"></rect>
+                        </g>
+                        </g>
+                    </svg>
+                    <div class="author__info">
+                        <p class="byline">By: Fabian Steineck</p>
+                        <p class="dateline">February 28, 2023</p>
+                    </div>
+                </div>
+                <p class="article-tags">
+                    <span class="tag">chess</span> <span class="tag">strategy games</span>
+                    <span class="tag featured">chess tactics</span>
+                </p>
+            </div>
+        </div>
+        <div class="content">
+            <figure><img src="assets/the-sicilian-defense.png">
+                <figcaption>Screenshot by Fabian Steineck</figcaption>
+            </figure>
+            <p>Black, like in symmetrical King's Pawn openings like the Ruy Lopez, secures some central space by
+                occupying the center on move one. However, in the Sicilian Defense, black ensures that the position
+                becomes unbalanced!</p>
+
+            <p>For several decades, the Sicilian Defense weapon has been a popular fighting weapon at all levels of
+                chess.</p>
+
+            <p>In comparison to 1...e5, the Sicilian Defense has the disadvantage of not opening up any lines for
+                black's pieces to develop (except for the queen, which often does not want to develop too early). This
+                means that in the Sicilian Defense, white will frequently gain an advantage in piece development... But
+                how can White take advantage of this?</p>
+
+            <p>White can try to open the center with an early d4, hoping to use their more active pieces... However,
+                there is a positional disadvantage. If white plays d4, black can exchange their c-pawn for white's more
+                central d-pawn, giving them the long-term positional advantage of having two central pawns to one!</p>
+            <figure><img src="assets/the-sicilian-defense-exchange.png">
+                <figcaption>Screenshot by Fabian Steineck</figcaption>
+            </figure>
+            <p>We'll look at a few different strategies white can use against the Sicilian Defense:</p>
+
+            <p>&bull; White quickly opens the center with Nf3 and d4 (The Open Sicilian)</p>
+
+            <p>&bull; White quickly opens the center with c3 and d4 (Alapin Variation)</p>
+
+            <p>&bull; White plays d4 immediately (Smith-Morra Gambit)</p>
+
+            <p>&bull; White does not open the center and instead builds up slowly on the kingside where there is more
+                room (Closed Sicilian)</p>
+            <h2>1. e4 c5 2. Nf3 d6 3. d4 cxd4 4. Nxd4 – The Open Sicilian</h2>
+            <figure><img src="assets/the-sicilian-defense-exchange2.png">
+                <figcaption>Screenshot by Fabian Steineck</figcaption>
+            </figure>
+            <p>Note that black has a couple options on move two. 2...d6 is popular, but so are 2...e6 and 2...Nc6. There
+                are numerous transpositions between the three options, but many continuations are unique to each.</p>
+
+            <p>The Open Sicilian is a highly complex opening with at least a dozen subvariations that is not suitable
+                for beginners on either side! White accepts black's challenge and immediately opens the center,
+                attempting to capitalize on their development lead.</p>
+
+            <p>The following are some common themes in the Open Sicilian:</p>
+
+            <p>&bull; If black castles kingside, White may castle queenside in some lines, leaving the kingside pawns
+                free to advance towards the enemy king on g8.</p>
+
+            <p>&bull; From afar, black frequently attempts to exert pressure on white's center. Playing...a6 and...b5
+                followed by a later...b4 is a common strategy for removing white's knight from c3 and weakening white's
+                defense of e4.</p>
+
+            <p>&bull; Black may play a later...e5 to equalize the space in the center, but must ensure that their d-pawn
+                does not become weak!</p>
+
+            <p>Let's look at one exciting, aggressive continuation to show how dangerous the Open Sicilian can be!</p>
+
+            <p>1. E4 c5 2. Nf3 d6 3. d4 cxd4 4. Nxd4 Nf6 5. Nc3 a6</p>
+            <figure><img src="assets/the-sicilian-defense-najdorf-variation.png">
+                <figcaption>Screenshot by Fabian Steineck</figcaption>
+            </figure>
+            <p> The Najdorf Variation of the Sicilian Defense is very popular. Playing an early flank pawn move
+                like...a6 may appear to violate the Opening Principles, but black wants to deny the white pieces the b5
+                square and eventually expand with...b5.</p>
+
+            <p>5&#8230;g6 would instead be the infamous Dragon variation</p>
+            <p>6. Be3 e5 7. Nb3 Be6 8. f3 Be7 9. Qd2 Nbd7 10. 0-0-0 0-0</p>
+            <figure><img src="assets/the-english-against-the-najdorf-sicilian.png">
+                <figcaption>Screenshot by Fabian Steineck</figcaption>
+            </figure>
+            <p> The stage is set. White&rsquo;s set-up, categorized by the early f3 and queenside castling, is known as
+                the English Attack against the Najdorf Sicilian (yes, even the subvariations have subvariations!) White
+                wants to advance his kingside pawns towards the enemy monarch, and to do so without exposing his own
+                king, white castles in the other direction. The f3 pawn does a good job of stabilizing the center as
+                well as supporting the advance of the g-pawn.</p>
+
+            <p>11. g4 b5 12. g5 b4 13. Ne2 Ne8 14. f4 a5 15. f5 a4</p>
+            <figure><img src="assets/the-english-against-the-najdorf-sicilian-2.png">
+                <figcaption>Screenshot by Fabian Steineck</figcaption>
+            </figure>
+            <p> Insanity! Both sides are charging headlong towards the opposing king. White's strongest move here is 16.
+                Nbd4!, which temporarily sacrifices a piece, but after 16...exd4 17. Nxd4, black's bishop is still under
+                attack, and white threatens the powerful fork Nc6. White will reclaim the piece...in a highly
+                asymmetrical, double-edged position.</p>
+
+            <p>This is just one exciting and dangerous variation of the Open Sicilian - beware!</p>
+
+            <p>Other versions of the Open Sicilian, however, (such as the Maroczy Bind in the Accelerated Dragon) are
+                much more positional in nature - but no less strategically demanding. Many variations (such as the
+                Sveshnikov) have uncommon middlegames not found in other opening lines!</p>
+
+            <p>The Taimanov Sicilian is a variation on the Open Sicilian in which the queen comes to c7 early on!</p>
+            <h2>1. e4 c5 2. c3 – The Alapin Variation</h2>
+            <figure><img src="assets/the-sicilian-defense-alpin-variation.png">
+                <figcaption>Screenshot by Fabian Steineck</figcaption>
+            </figure>
+            <p>In comparison to the thrills of the Open Sicilian, the Alapin variation is much more approachable to
+                those who don't want to go down the rabbit hole of opening memorization.</p>
+
+            <p>White's strategy is sound and straightforward: white wants to play d4 next turn and capture the center,
+                and if black exchanges on d4, white will be able to recapture with a pawn rather than a piece.</p>
+            <p>This strategy works well against an unprepared Black player. My first tournament chess game ever started
+                with 1. e4 c5 2. c3 Nc6 3. d4 cxd4 4. cxd4 Nf6 5. Nc3:</p>
+            <figure><img src="assets/the-sicilian-first-tournament.png">
+                <figcaption>Screenshot by Fabian Steineck</figcaption>
+            </figure>
+            <p> Success! Complete central control.</p>
+
+            <p>But black can fight back better than this. The most significant disadvantage of 2. c3 is that it removes
+                the best square for white's queenside knight, which black can exploit. 2...d5! is a common response
+                (others include 2...Nf6 and 2...e6).</p>
+
+            <p>Black's queen is much more secure in the center after 3. exd5 Qxd5, as white cannot play Nc3 and kick it
+                away!</p>
+
+            <p>The Alapin variation probably doesn't give white more than equality if black knows how to handle it, but
+                it's easy to learn and difficult to screw up.</p>
+            <h2>1. e4 c5 2. d4 – The Smith Morra Gambit</h2>
+            <figure><img src="assets/the-smith-morra-gambit.png">
+                <figcaption>Screenshot by Fabian Steineck</figcaption>
+            </figure>
+            <p>In the Smith-Morra, white tries to extend his development lead even further by playing d4 without any
+                preparation. White intends to open up the position by sacrificing a pawn.</p>
+
+            <p>2&#8230;cxd4 3. c3</p>
+
+            <p>Of course, white could take back with the queen on move 3, but this is unlikely. Black will simply get to
+                play... Nc6 and kick the queen away while gaining time, and white is simply playing a weaker version of
+                the above-mentioned Open Sicilian.</p>
+
+            <p>This pawn sacrifice is white&rsquo;s idea behind the second move.</p>
+
+            <p>3&#8230;dxc3 4. Nxc3</p>
+
+            <p>White is down a pawn, but has opportunities to gain a significant development advantage. White's rooks
+                will eventually exert pressure along the semi-open d-and-c files, and black must be cautious about how
+                they develop! For instance, after 4... 5. Nc6 d6 6. Bc4 Nf6?!</p>
+            <figure><img src="assets/the-smith-morra-gambit-2.png">
+                <figcaption>Screenshot by Fabian Steineck</figcaption>
+            </figure>
+            <p> 7. e5! Is very strong. 7&#8230;dxe5 8. Qxd8+ Nxd8 9. Nb5! The position has opened up long before
+                black&rsquo;s pieces were ready to fight.</p>
+
+            <p>With accurate play, Black can defend against the Smith-Morra, but it will be a difficult task. Many
+                strong players refuse to accept the &quot;free&quot; pawn, resulting in a position similar to the Alapin
+                variation described above.</p>
+            <h2>Closed Sicilian</h2>
+            <figure><img src="assets/the-closed-sicilian-defense.png">
+                <figcaption>Screenshot by Fabian Steineck</figcaption>
+            </figure>
+            <p>White can avoid all three of the above ideas by not playing an early d4, keeping the center closed for
+                the time being. This strategy is known as the Closed Sicilian.</p>
+
+            <p>One such idea is known as the Grand Prix Attack &ndash; 1. e4 c5 2. Nc3 Nc6 3. f4</p>
+
+            <p> The Grand Prix Attack, like many closed Sicilian lines, is better understood conceptually rather than by
+                delving into variations, as both sides have plenty of options to continue with. Rather than immediately
+                opening up the center, white accumulates on the kingside.</p>
+
+            <p>On the queenside, Black is likely to do the same. Both sides reserve the right to strike in the center
+                later if it becomes advantageous!</p>
+
+            <p>3&#8230;g6 4. Nf3 Bg7 5. Bc4 e6 6. 0-0 d6 7. d3 Nge7 8. Qe1 a6 9. f5 b5</p>
+            <figure><img src="assets/the-closed-sicilian-defense-2.png">
+                <figcaption>Screenshot by Fabian Steineck</figcaption>
+            </figure>
+            <p> Hrair - Ivanov, Russia 2006, is a good example of how play can progress! Both sides have an advantage on
+                their respective wings, but white came out on top in this game.</p>
+
+            <p>Other options for both sides exist, ranging from the inventive 2. b3 to the subptimal &quot;Bowdler
+                Attack&quot; with 2. Bc4. The Sicilian Defense is a strategically rich and intricate opening. Many White
+                players find the King's Pawn Opening intimidating, but there is a variation for everyone! Learn the
+                Sicilian Defense well, whether you prefer the highly ambitious Open Sicilian, the simple and sound
+                Alapin, the sacrificial Smith-Morra Gambit, or the slow build-up of the Closed Sicilian.</p>
+            <footer>
+                <p>Copyright 2023. All rights reserved.</p>
+            </footer>
+</body>
+
+</html>
+<script src="js/mode.js"></script>
+<script src="js/menu.js"></script>

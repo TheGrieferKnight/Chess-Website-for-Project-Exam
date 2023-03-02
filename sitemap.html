@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Arvo&amp;display=swap" />
+  <link rel="stylesheet" href="css/navbar.css" />
+  <script src="sitemap.js"></script>
+  <link rel="stylesheet" href="./sitemap.css">
+  <title>Chess: A Game of Strategy and Skill</title>
+</head>
+
+<body>
+
+  <nav class="menu" role='navigation'>
+    <ol>
+      <a href="index.html">
+        <li class="menu-item">Home</li>
+      </a>
+      <li onclick="window.location='rules.html'" class="menu-item" aria-haspopup="true">Rules
+        <ol class="sub-menu" class="top" aria-label="submenu">
+          <a href="castling.html">
+            <li class="menu-item">Castling</li>
+          </a>
+          <a href="enpassant.html">
+            <li class="menu-item">En Passant</li>
+          </a>
+          <a href="legalmoves.html">
+            <li class="menu-item">Legal Moves</li>
+          </a>
+        </ol>
+      </li>
+      <li class="menu-item" aria-haspopup="true">Openings
+        <ol class="sub-menu" aria-label="submenu">
+          <a href="openings.html">
+            <li class="menu-item">Overview</li>
+          </a>
+          <a href="the-kings-pawn-opening.html">
+            <li class="menu-item">Kings Pawn Opening</li>
+          </a>
+          <a href="the-queens-pawn-opening.html">
+            <li class="menu-item">The Queens Pawn Opening</li>
+          </a>
+          <a href="the-english-opening.html">
+            <li class="menu-item">The English Opening</li>
+          </a>
+          <a href="the-sicilian-defense.html">
+            <li class="menu-item">The Sicilian Defense</li>
+          </a>
+        </ol>
+      </li>
+      <li onclick="window.location='endgames.html'" class="menu-item" aria-haspopup="true">Endgames
+        <ol class="sub-menu" aria-label="submenu">
+          <a href="openings.html">
+            <li class="menu-item">!WIP!</li>
+          </a>
+        </ol>
+      </li>
+      <li class="menu-item" aria-haspopup="true">Strategies
+        <ol class="sub-menu" aria-label="submenu">
+          <a href="opening-strategies.html">
+            <li class="menu-item">Opening Strategies</li>
+          </a>
+          <a href="middle-game-strategies.html">
+            <li class="menu-item">Middle Game Strategies</li>
+          </a>
+          <a href="end-game-strategies.html">
+            <li class="menu-item">Endgame Strategies</li>
+          </a>
+        </ol>
+      </li>
+      <a href="tactics.html">
+        <li class="menu-item">Tactics</li>
+      </a>
+    </ol>
+  </nav>
+
+  <!-- partial:index.partial.html -->
+  <div id="wrapper"><span class="label">Home</span>
+    <div class="branch lv1">
+      <div class="entry"><span class="label">Rules</span>
+        <div class="branch lv2">
+          <div class="entry"><span class="label">Castling</span>
+          </div>
+          <div class="entry"><span class="label">En Passant</span>
+          </div>
+          <div class="entry"><span class="label">Legal Moves</span>
+          </div>
+        </div>
+      </div>
+      <div class="entry"><span class="label">Endgames</span></div>
+      <div class="entry"><span class="label">Openings</span>
+        <div class="branch lv2">
+          <div class="entry"><span class="label">Overview</span></div>
+          <div class="entry"><span class="label">The Kings Pawn Opening</span></div>
+          <div class="entry"><span class="label">The Queens Pawn Opening</span></div>
+          <div class="entry"><span class="label">The English Opening</span></div>
+          <div class="entry"><span class="label">The Sicilian Defense</span>
+          </div>
+          <div class="entry"><span class="label">Caro-Kann Defense</span></div>
+        </div>
+      </div>
+      <div class="entry"><span class="label">Strategies</span>
+        <div class="branch lv2">
+          <div class="entry"><span class="label">Opening Strategies</span></div>
+          <div class="entry"><span class="label">Middle Game Strategies</span></div>
+          <div class="entry"><span class="label">End Game Strategies</span></div>
+        </div>
+      </div>
+      <div class="entry"><span class="label">Tactics</span></div>
+    </div>
+  </div>
+  <!-- partial -->
+  <script src="./script.js"></script>
+
+</body>
+
+</html>
